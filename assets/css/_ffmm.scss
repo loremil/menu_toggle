@@ -1,0 +1,135 @@
+// /* ESTILOS FONDOS MUTUOS */
+.fondo--ayuda {
+  -webkit-box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.3);
+  padding: 1em 2em 1.5em;
+  .ayuda--informacion {
+    border-top: 1px dashed #D0D0D0;
+    margin-top: 0.25em;
+    padding-top: 0.7em;
+    .informacion--caption {
+      color: #9B9B9B;
+      @include font-12;
+      font-style: italic;
+      padding-top: 0.7em;
+      span {
+        color: $color-primario !important;
+        font-style: normal;
+        padding-right: 1em;
+        i {
+          vertical-align: middle;
+          padding-right: 0.25em;
+        }
+      }
+    }
+  }
+  .ayuda--titulo {
+    margin-bottom: 2em;
+  }
+  .ayuda--grafico {
+    margin: 0;
+  }
+  img.grafico-img {
+      width: 99%;
+      padding-top: 0.25em;
+  }
+  .ayuda--input {
+    width: 80%;
+    @include font-14;
+    md-icon.material-icons {
+      color: $color-active;
+    }
+  }
+  md-input-container label:not(.md-no-float):not(.md-container-ignore), md-input-container .md-placeholder, .md-select-value *:first-child {
+    color: $color-primario;
+  }
+}
+
+.fondo--link {
+   float: right;
+   padding-left: 1em;
+   padding-top: 0.6em;
+   span {
+     @include font-14;
+     font-weight: 600;
+     outline:none;
+     vertical-align: super;
+   }
+   .icono {
+     color: $color-active;
+   }
+ }
+.cartera--ico{
+  display: inline;
+  margin-left: 0.5em;
+  md-icon {
+    height: inherit;
+    color: #5BABBF;
+  }
+}
+@media (max-width:991px){
+  .fondo--link {
+    text-align: right;
+    float: none;
+  }
+  .tags {
+    padding-left: 0;
+  }
+  .fondo--ayuda{
+    .ayuda--informacion{
+      .informacion--caption{
+        margin-bottom: 1em;
+
+      }
+    }
+  }
+}
+//Estilos comprobante Jorge 27/04
+
+.logo--comprobante{
+  width: 200px;
+  float: right;
+  padding: 0px 0px 5px 0px;
+  img {
+    width: 200px;
+  }
+}
+.timbre--comprobante{
+  width: 120px;
+  margin: 10px 0px;
+  img {
+    width: 120px;
+  }
+}
+.footer--comprobante{
+  border-top-style: dotted;
+  border-top: solid 2px #CCD1D9;
+  height: auto;
+  padding: 0.625em 0em;
+}
+.input--monto{
+  height: auto;
+  @include font-24;
+  line-height: 36px;
+  outline: solid 1px red;
+  width: auto;
+  margin: 10px 0px 0px 0px;
+}
+.input--comprobante {
+  color: $color-active;
+  height: auto;
+  width: 200px;
+  outline: solid 1px red;
+  .md-input[disabled], [disabled] md-input-container .md-input {
+		background: none;
+		color: $color-active;
+		opacity: none;
+    background-position: none;
+    background-repeat: none;
+    background-size: none;
+    height: auto;
+    line-height: 36px;
+    @include font-36;
+	}
+}

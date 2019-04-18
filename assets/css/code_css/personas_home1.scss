@@ -1,0 +1,530 @@
+.resumenInversiones {
+  text-align: left;
+  position: relative;
+  margin-top: 1em;
+
+  .resumen--bloque {
+    background: $color-blanco;
+    position: relative;
+    padding: 1em;
+    height: 639px;
+    -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+
+    .resumen--bloque__titulo {
+      padding-bottom: 0.4em;
+      border-bottom: 1px solid $color-gris-2;
+      margin-bottom: 10px;
+			h2.subtitulos {
+			    margin: auto !important;
+					line-height: 32px;
+					font-size: 1.125rem;
+			}
+      .bloque--titulo__vermas {
+        float: right;
+        i.material-icons {
+          color: $color-verde-1;
+        }
+      }
+    }
+    .resumen--bloque__contenido {
+      height: 533px;
+      color: $color-gris-4;
+      position: relative;
+      .contenidoWidgetAsesorias {
+          .contenidoWidgetAsesorias--informe {
+              margin-top: 20px;
+              width: 100%;
+              margin-bottom: 20px;
+              span {
+                  font-weight: 600
+              }
+          }
+          g.highcharts-axis.highcharts-yaxis {
+              display: none !important;
+          }
+          g.highcharts-axis.highcharts-xaxis {
+              display: none !important;
+          }
+          .contenidoWidgetAsesorias--imgIcon {
+              float: left;
+              margin-right: 15px;
+          }
+          .contenidoWidgetAsesorias--grafico {
+              margin-top: 25px;
+              margin-left: -5px;
+          }
+          h3.contenidoWidgetAsesorias--tituloRiesgo {
+              float: left;
+              color: #536374;
+              font-size: 18px;
+              font-weight: 600;
+              padding-top: 5px;
+          }
+          h4.contenidoWidgetAsesorias--tituloConsejo {
+              color: #69B4C5;
+              font-size: 16px;
+              font-weight: 600;
+              padding-top: 7px;
+          }
+          p.contenidoWidgetAsesorias--consejo {
+              font-size: 13px;
+              font-weight: 500;
+              text-align: justify;
+              letter-spacing: 0.01px;
+          }
+          button {
+              margin: 2em 0!important;
+          }
+      }
+      .graficoWidgetPatrimonio {
+            /*margin-bottom: -100px;*/
+          .highcharts-container {
+              margin: auto;
+          }
+          .swiper-container {
+            /*  height: 341px !important;*/
+          }
+          .swiper-pagination-bullet-active {
+              background: #5BABBF;
+          }
+          .graficoWidgetPatrimonio--slideProducto__textos {
+              text-align: center;
+              position: absolute;
+              .nombre,
+              .monto,
+              .fecha {
+                  display: block;
+              }
+              span.nombre {
+                margin: 0 auto;
+                width: 50%;
+                @include font-16;
+              }
+              span.monto {
+                  @include lato-bold-600;
+                  @include font-20;
+                  padding: 20px 0;
+              }
+              span.porcentaje {
+                  @include font-20;
+                  color: #69B4C5;
+              }
+              span.fecha {
+                  color: #B3B5BB;
+                  @include font-9;
+              }
+          }
+      }
+      .resumen--detalle {
+        padding-top: 0.4em;
+        img {
+          max-width: 100%;
+        }
+        // .detalle--info {
+        //   line-height: 1.75em;
+        //   color: $color-gris-3;
+        //   font-size: 14px;
+        //   font-size: 0.875rem;
+        // }
+        .detalle--titulo {
+          line-height: 1.875em;
+          @include lato-bold-600;
+          span {
+            float: right;
+          }
+        }
+        .detalle--info {
+          line-height: 1.75em;
+          color: $color-gris-3;
+          @include font-14;
+          span {
+            float: right;
+          }
+        }
+      }
+
+      // PROGRES BAR EN WIDGET PATRIMONIO (RESUMEN)
+      //VERSION DESKTOP
+      .contenedorScrollme--desktop {
+          max-height: 270px;
+          float: left;
+          width: 100%;
+          margin-top: 10px;
+          .ngsb-wrap {
+              padding: 2em;
+          }
+          .patrimonioWidgetBar {
+              display: inline-table;
+              width: 100%;
+              margin-bottom: 30px;
+              .tituloProgresBar {
+                  @include lato-bold-600;
+                  margin-bottom: 9px;
+              }
+              .porcentajeProgresBar {
+                  float: left;
+                  color: #5BABBF;
+              }
+              .totalProgresBar {
+                  float: right;
+              }
+              .contenedorProgresBar {
+                  height: 2px;
+                  background-color: #E3E3E3;
+                  width: 100%;
+                  margin-top: 34px;
+              }
+              .patrimonioWidgetBar--contenedorDatos-empresa {
+                  width: 100%;
+                  float: left;
+              }
+              .patrimonioWidgetBar--contenedorDatos-personas {
+                  width: 63%;
+                  float: left;
+              }
+              .patrimonioWidgetBar--progresBar {
+                  background-color: #5BABBF !important;
+                  height: 2px;
+              }
+              .patrimonioWidgetBar--boton {
+                  width: 30%;
+                  min-width: 0 !important;
+                  margin: 14px auto 0 auto !important;
+                  /* position: relative; */
+                  float: right;
+                  text-align: center;
+                  display: flex;
+                  display: -ms-flexbox;
+
+                  span {
+                      margin: auto;
+                  }
+              }
+          }
+          .ultimo-hijo {
+              margin-bottom: 50px !important;
+          }
+      }
+
+      // PROGRES BAR EN WIDGET PATRIMONIO (RESUMEN)
+      //VERSION MOBILE
+      .contenedorScrollme--mobile {
+          margin: auto;
+          height: 100%;
+          padding: 15px;
+          .patrimonioWidgetBar {
+              display: inline-table;
+              width: 100%;
+              margin-bottom: 30px;
+              .tituloProgresBar {
+                  @include lato-bold-600;
+                  margin-bottom: 9px;
+              }
+              .porcentajeProgresBar {
+                  float: left;
+                  color: #5BABBF;
+              }
+              .totalProgresBar {
+                  float: right;
+              }
+              .contenedorProgresBar {
+                  height: 2px;
+                  background-color: #E3E3E3;
+                  width: 100%;
+                  margin-top: 34px;
+              }
+              .patrimonioWidgetBar--contenedorDatos {
+                  width: 63%;
+                  float: left;
+              }
+              .patrimonioWidgetBar--progresBar {
+                  background-color: #5BABBF !important;
+                  height: 2px;
+              }
+              .patrimonioWidgetBar--boton {
+                  width: 30%;
+                  min-width: 0 !important;
+                  margin: 14px auto 0 auto !important;
+                  /* position: relative; */
+                  float: right;
+                  text-align: center;
+                  display: flex;
+                  display: -ms-flexbox;
+                  span {
+                      margin: auto;
+                  }
+              }
+          }
+      }
+
+    }
+  }
+} //fin resumenInversiones
+
+/* BOTONES */
+.md-button.boton1 {
+	color:$color-blanco;
+	background-color: $color-azul-1;
+	border-radius: 0;
+
+	min-height: 2.3em;
+	min-width: 11.3em;
+	vertical-align: top;
+  font-family: 'Lato';
+	span{
+		vertical-align: middle;
+	}
+}
+
+.md-button.boton2 {
+	color:$color-azul-1;
+	background-color: $color-blanco;
+	border-radius: 0;
+	min-height: 2.3em;
+	min-width: 11.3em;
+	vertical-align: top;
+  font-family: 'Lato';
+	span{
+		vertical-align: middle;
+	}
+}
+
+.md-button.boton1:not([disabled]) {
+  color:$color-blanco;
+	background-color: $color-azul-1;
+}
+.md-button.boton1:not([disabled]):hover //,  .md-button.boton3:not([disabled]):hover //
+ {
+	color:$color-blanco;
+	background-color: $color-azul-1;
+}
+
+.md-button.boton1, .md-button.boton2 {
+	min-width: inherit;
+	width: 100%;
+	margin: 0;
+}
+
+
+//Slider recomendación (numeros y texto)
+.contenidoWidgetRecomendacion {
+       margin-bottom: 49px;
+       .contenedorTextos--estrategia {
+           margin-bottom: 30px;
+           margin-top: 10px;
+           h3.contenidoWidgetRecomendacion--estrategia {
+               @include font-14;
+               padding: 0.3em 0;
+           }
+           h3.contenidoWidgetRecomendacion--estrategiaTipo {
+               font-size: 18px;
+               /* font-size: 1.25rem; */
+               padding: 0.5em 0 0.3em 0;
+               line-height: 3px;
+           }
+       }
+       .contenedorVariacion--estrategia {
+           width: 30%;
+           float: left;
+           .variacionPorcentaje {
+               color: #69B4C5;
+               font-size: 26px;
+               padding-bottom: 0.3em;
+           }
+           .variacionIndicador {
+               color: #9B9B9B;
+               font-size: 13px;
+           }
+       }
+       .contenedorValorCuota--estrategia {
+           width: 70%;
+           float: right;
+           text-align: right;
+           .variacionPorcentaje {
+               color: #F69D00;
+               font-size: 26px;
+               padding-bottom: 0.3em;
+           }
+           .variacionIndicador {
+               color: #9B9B9B;
+               font-size: 13px;
+           }
+       }
+       div#swipeWidgetRecomendacion-pagination {
+           width: 50%;
+           left: 25%;
+           padding-top: 10px;
+           .swiper-pagination-bullet {
+               margin-left: 7px;
+               background: #5BABBF;
+           }
+       }
+   }
+
+//COMIENZO MEDIA QUERIES
+@media (min-width: 992px) and (max-width: 1199px){
+	.producto--seleccionado{
+    .seleccionado--texto{
+      @include font-16;
+    }
+    .md-button.boton1:not([disabled]){
+      min-width: inherit;
+      margin: 6px 0;
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+  .producto--seleccionado{
+    padding: 1em;
+    box-sizing: border-box;
+    .seleccionado--texto{
+      @include font-16;
+    }
+    .seleccionado--input {
+      padding-right: 1.5em;
+    }
+    .md-button.boton1.boton__bottom:not([disabled]){
+      width: 100%;
+      margin: 1em 0 0 0;
+    }
+    .button--detalleaporte {
+      width: initial;
+    }
+  }
+}
+@media (max-width:767px){
+  .resumenInversiones {
+    text-align: left;
+    position: relative;
+    margin-top: 1em;
+    .resumen--bloque {
+      background: #FFFFFF;
+      position: relative;
+      padding: 1em;
+      height: 639px;
+      -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+      -moz-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+      box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+      .resumen--bloque__titulo {
+        padding-bottom: 6px;
+        border-bottom: 1px solid #CCD1D9;
+        margin-bottom: 10px;
+        .bloque--titulo__sub {
+          float: left;
+          .subtitulos {
+            @include font-18;
+          }
+        }
+        .bloque--titulo__vermas {
+          float: right;
+          i.material-icons {
+            color: $color-verde-1;
+          }
+        }
+      }
+      .resumen--bloque__contenido {
+        color: #536374;
+        position: relative;
+        .resumen--detalle {
+          padding-top: 0.4em;
+          img {
+            max-width: 100%;
+          }
+          .detalle--titulo {
+            line-height: 1.875em;
+            @include lato-bold-600;
+            span {
+              float: right;
+            }
+          }
+          .detalle--info {
+            line-height: 1.75em;
+            color: $color-gris-3;
+            @include font-14;
+            span {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  } //fin resumenInversiones
+} // fin max 767
+
+
+  @media screen and (max-width: 991px) {
+
+
+    .resumenInversiones {
+      .resumen--bloque {
+        min-height: 200px !important;
+        margin-bottom: 1em;
+        height: 100%;
+        .resumen--bloque__contenido {
+          min-height: 100%;
+          position: inherit;
+          .resumen--contenido__bottom {
+            position: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .resumenPersonasSlider {
+      .resumenBanner {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        img {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      .swiper-pagination {
+        top: 215px;
+        width: 100%;
+      }
+    }
+    .resumenInversiones {
+      .resumen--bloque {
+        min-height: 200px !important;
+        margin-bottom: 1em;
+        .resumen--bloque__contenido {
+          min-height: 100%;
+          position: inherit;
+          .resumen--contenido__bottom {
+            position: inherit;
+            .bottom--ver {
+              .md-button.boton--ver {
+                width: 94%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media screen and (max-width: 480px) {
+  .card--cuenta {
+    .favorito {
+      text-align: center;
+    }
+  }
+  .resumen--contenido__bottom{
+    .bottom--ver {
+      .md-button.boton--ver {
+        width: 94%;
+      }
+    }
+  }
+  .menu {
+    margin-top: 0;
+  }
+}

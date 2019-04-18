@@ -1,0 +1,565 @@
+h1.titulo--principal{
+    display: block;
+    font-family: 'Lato';
+    vertical-align: top;
+    padding: 0.8em 0 0.3em 0;
+    border-bottom: 1px solid #CCD1D9;
+    @include font-36;
+    @include lato-light;
+}
+
+h2.titulo--secundario{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+.titulo--detalle {
+        font-family: 'Lato';
+  padding-top:1em;
+  line-height: 1.5em;
+  color: #5BABBF;
+  @include font-12;
+}
+
+  .contenido--detalle{
+          font-family: 'Lato';
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  @include font-16;
+}
+
+
+
+  .parrafo--detalle{
+          font-family: 'Lato';
+  text-align: justify;
+  margin-top: 1em;
+  line-height: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  @include font-14;
+}
+
+
+
+
+
+  .titulo--botonSemantico{
+          font-family: 'Lato';
+  color: #5BABBF;
+  line-height: 1.5em;
+  padding: 0.5em 0em 1em 0em;
+  @include font-14;
+}
+
+.titulo--montoDestacado{
+        font-family: 'Lato';
+  display: inline-block;
+  color:$color-gris-4;
+  vertical-align: middle;
+  padding-right: 0.8em;
+  @include font-20;
+
+}
+.cantidad--montoDestacado{
+        font-family: 'Lato';
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.8em;
+    line-height: 1em;
+    @include font-22;
+    color:$color-verde-1;
+}
+.parrafo--alerta {
+        font-family: 'Lato';
+        @include font-14;
+        line-height: 1.5em;
+}
+
+h2.titulo--anuncios{
+        font-family: 'Lato';
+  border-bottom: 1px solid $color-gris-2;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+
+
+.separador {
+padding:2em 0em 2em 0em;
+// background-color:$color-gris-1;
+
+.titulo--variacionEstrategia{
+  font-family: 'Lato';
+      line-height: 1.5em;
+  // padding: 0em 0em 0.3em;
+  text-align: left;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color:$color-gris-4;
+  @include font-14;
+}
+.tipo--variacionEstrategia{
+  font-family: 'Lato';
+  line-height: 1.5em;
+  text-align: left;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+.titulo--graficoBarra {
+  font-family: 'Lato';
+  margin-bottom: 1em;
+  padding: 1em 0em 0.3em;
+  text-align: left;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color:$color-gris-4;
+  @include font-14;
+  @include lato-bold-600;
+}
+
+.porcentaje--graficoBarra{
+  color:$color-verde-1;
+  vertical-align: baseline;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+  text-align: left;
+  @include font-14;
+}
+.monto--graficoBarra{
+  vertical-align: baseline;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+  text-align: left;
+  @include font-14;
+}
+
+.parrafo--terminosCondiciones {
+        font-family: 'Lato';
+        color: $color-gris-3;
+        line-height: 1.5em;
+        padding-top:1em;
+        text-align: justify;
+        @include font-12;
+}
+
+.titulo--terminosCondiciones{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+.titulo--recomendacion{
+  display:inline-block;
+        font-family: 'Lato';
+        padding-right: 0.7em;
+@include font-12;
+}
+
+.texto--recomendacion {
+    display:inline-block;
+        font-family: 'Lato';
+        color: $color-gris-3;
+        font-style: italic;
+        line-height: 1.5em;
+        text-align: justify;
+        @include font-12;
+}
+
+.titulo--recomendacionDestacada{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+.parrafo--recomendacionDestacada{
+        font-family: 'Lato';
+text-align: justify;
+line-height: 1.5em;
+padding: 1em 0em 1em 0em;
+@include font-14;
+}
+
+.parrafo--recomendacionPrincipal{
+        font-family: 'Lato';
+text-align: justify;
+line-height: 1em;
+padding: 1em 0em 1em 0em;
+@include font-14;
+@include lato-bold-600;
+}
+
+.item--infografia{
+font-family: 'Lato';
+vertical-align:super;
+line-height: 2.5em;
+padding: 0.5em 0em 0.5em 0em;
+@include font-14;
+@include lato-bold-600;
+}
+
+.titulo--cajaDescargable{
+        font-family: 'Lato';
+        color:$color-verde-1;
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+
+  @include font-18;
+  @include lato-bold-600;
+}
+
+.fecha--cajaDescargable{
+        vertical-align: middle;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+
+  text-align: left;
+  line-height: 0.8em;
+  @include font-12;
+}
+.periodo--cajaDescargable{
+        vertical-align: middle;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+
+  text-align: left;
+  line-height: 0.8em;
+  @include font-12;
+}
+.publicacion--cajaDescargable{
+        vertical-align: middle;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+
+  text-align: left;
+  line-height: 0.8em;
+  @include font-14;
+}
+
+.titulo--botonTab{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-16;
+}
+.titulo--botonTabOver{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-16;
+  @include lato-bold-600;
+}
+.nombre--graficoCircular{
+font-family: 'Lato';
+vertical-align: middle;
+line-height: 1.3em;
+padding: 0.5em 0em 0.5em 0em;
+@include font-18;
+}
+.numeros--graficoCircular{
+font-family: 'Lato';
+vertical-align: middle;
+line-height: 1.3em;
+padding: 0.5em 0em 0.5em 0em;
+@include font-20;
+@include lato-bold-600;
+}
+.porcentaje--graficoCircular{
+font-family: 'Lato';
+color:$color-verde-1;
+vertical-align: middle;
+line-height: 1.3em;
+padding: 0.5em 0em 0.5em 0em;
+@include font-20;
+}
+
+h2.titulo--secundarioSubrayado{
+        font-family: 'Lato';
+  border-bottom: 1px solid $color-gris-2;
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-20;
+}
+
+.titulo--operacion{
+            color:$color-gris-4;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    line-height: 1.3em;
+    @include font-14;
+
+}
+    .numero--operacion{
+            font-family: 'Lato';
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    @include font-16;
+    @include lato-bold-600;
+  }
+
+.label--paginador{
+  font-family: 'Lato';
+  color:$color-gris-4;
+  padding: 0.5em 0em 1em 0em;
+  @include font-14;
+  }
+
+.label--dropdownList{
+  font-family: 'Lato';
+  color: #5BABBF;
+  padding: 0.5em 0em 1em 0em;
+  @include font-14;
+  }
+    .titulo--dropdownList{
+    color:$color-gris-4;
+    font-family: 'Lato';
+    vertical-align: middle;
+    line-height: 1.3em;
+  padding: 0.5em 0em 1em 0em;
+    @include font-16;
+    @include lato-bold-600;
+}
+
+    .item--dropdownList{
+      color:$color-gris-4;
+      font-family: 'Lato';
+            vertical-align: middle;
+                  line-height: 1.3em;
+  padding: 0.5em 0em 1em 0em;
+      @include font-14;
+      }
+    .itemOver--dropdownList{
+            vertical-align: middle;
+      color:$color-azul-1;
+            line-height: 1.3em;
+      font-family: 'Lato';
+      padding: 0.5em 0em 1em 0em;
+      @include font-14;
+      }
+
+
+    .titulo--tabla{
+    font-family: 'Lato';
+    vertical-align: middle;
+    line-height: 1.8em;
+    padding: 0.5em 0em 0.5em 0em;
+    @include font-16;
+}
+    .encabezado--tabla{
+    font-family: 'Lato';
+    vertical-align: middle;
+    line-height: 1.8em;
+    padding: 0.5em 0em 0.5em 0em;
+    @include font-14;
+    @include lato-bold-600;
+}
+    .porcentaje--tabla{
+              color:$color-verde-1;
+    font-family: 'Lato';
+    vertical-align: middle;
+    line-height: 1.8em;
+    padding: 0.5em 0em 0.5em 0em;
+    @include font-14;
+    @include lato-bold-600;
+}
+  .detalle--tabla{
+          vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    text-align: left;
+    line-height: 1.8em;
+    @include font-14;
+}
+  .info--tabla{
+          vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+              font-style: italic;
+    text-align: left;
+    line-height: 1.8em;
+    @include font-12;
+}
+
+  .fecha--bitacora{
+            color:$color-gris-4;
+          // vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    line-height: 1.3em;
+    @include font-14;
+}
+  .nombre--bitacora{
+            color:$color-gris-4;
+          // vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    line-height: 1.3em;
+    @include font-14;
+    @include lato-bold-600;
+}
+.detalle--bitacora{
+            color:$color-gris-4;
+          // vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    line-height: 1.3em;
+    @include font-14;
+
+}
+
+
+  .subtitulo--resumen{
+          font-family: 'Lato';
+    text-align: left;
+    line-height: 1.8em;
+    @include font-14;
+    @include lato-bold-600;
+}
+  .detalle-resumen{
+          font-family: 'Lato';
+    color: $color-gris-3;
+    text-align: left;
+    line-height: 1.8em;
+    @include font-14;
+}
+
+.contenido--parrafo{
+        font-family: 'Lato';
+text-align: justify;
+line-height: 1.5em;
+padding: 1em 0em 1em 0em;
+@include font-14;
+}
+
+.info--titulo{
+        font-family: 'Lato';
+padding: 0.5em 0em 1em 0em;
+@include font-14;
+}
+
+.parrafo--info {
+        font-family: 'Lato';
+        color: $color-gris-3;
+        font-style: italic;
+        line-height: 1.5em;
+        text-align: justify;
+        @include font-12;
+}
+
+.parrafo--recomendacion {
+
+}
+
+          .titulo--resumenAccion {
+            line-height: 1.875em;
+            @include lato-bold-600;
+          }
+          .titulo--resumenProducto {
+            line-height: 1.875em;
+            color: $color-gris-3;
+            @include font-14;
+          }
+          .titulo--resumenFecha {
+            line-height: 1.875em;
+            color: $color-gris-3;
+            @include font-14;
+          }
+}
+
+
+
+
+
+
+
+
+          h3.contenidoWidgetAsesorias--tituloRiesgo {
+              float: left;
+              color: #536374;
+              font-size: 18px;
+              font-weight: 600;
+              padding-top: 5px;
+          }
+          h4.contenidoWidgetAsesorias--tituloConsejo {
+              color: #69B4C5;
+              font-size: 16px;
+              font-weight: 600;
+              padding-top: 7px;
+          }
+          p.contenidoWidgetAsesorias--consejo {
+              font-size: 13px;
+              font-weight: 500;
+              text-align: justify;
+              letter-spacing: 0.01px;
+          }
+
+
+
+
+
+      .contenedorScrollme--desktop {
+          margin-top: 10px;
+          .patrimonioWidgetBar {
+              display: inline-table;
+              width: 100%;
+              margin-bottom: 1em;
+              .tituloProgresBar {
+                  @include lato-bold-600;
+                  margin-bottom: 9px;
+              }
+              .porcentajeProgresBar {
+                  color: #5BABBF;
+              }
+              .patrimonioWidgetBar--contenedorDatos-personas {
+                  // width: 63%;
+              }
+          }
+      }

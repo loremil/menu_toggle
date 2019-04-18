@@ -1,0 +1,126 @@
+.ie10 {
+      header {
+        nav#navegacionPublica {
+          .menuPublico {
+            margin: auto;
+            width: auto;
+            h1 {}
+            .menuPublico--item {
+              &:hover {
+                &::after {
+                  display: none;
+                }
+              }
+              .menuPublico--link {
+                text-transform: none;
+              }
+            }
+          }
+          .menuLogin {
+            .menuLogin--despliegue {
+              p {
+                @media all and(max-width: 1023px) {
+                  display: none;
+                }
+                display: block;
+                span {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        nav#navegacionPrivada {
+          .menuPrivado {
+            .menuPrivado--item {
+              &:hover {
+                &::after {
+                  display: none;
+                }
+              }
+              .menuPrivado--link {
+                text-transform: none !important;
+                &:focus {
+                  border: none
+                }
+              }
+            }
+          }
+          .menuPrivado--iconos {
+            right: 25px;
+          }
+        }
+      }
+      header.thin {
+        nav#navegacionPublica {
+
+              h1 {
+              transition: all 0.3s ease;
+              margin-right: 20px !important;
+              width: 80%;
+              @media all and (max-width: 767px) {
+                width: 100%;
+                margin: auto !important;
+                }
+              }
+              img {
+                width: 80%;
+                transition: all 0.3s ease;
+                @media all and (max-width: 767px) {
+                width: 100%;
+                  }
+              }
+          }
+      
+      }
+    // CLASES PARA HOME
+
+      .homeIndicadores {
+        .sliderIndicadoresHome {
+          .swiper-container {
+             .swiper-wrapper {
+             padding-top: 0px;
+            }           
+          }
+          .contenedorIndicador {
+            position: relative;
+            .dato {
+              position: absolute;
+               left: 0px;
+              top: 0px;
+            }
+            .porcentaje {
+              position: absolute;
+                right: 112px;
+              top: 0px;
+            }
+            img {
+              position: absolute;
+              right: 20px;
+              top: 0px;
+            }
+          }
+        }
+      }
+
+      .homeProductos { 
+        .productos--bloque {
+          .productos--titulos {
+            padding-left: 65px;
+          }
+          .productos--parrafo {
+          padding-left: 65px;
+          } 
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .homeProductos {
+          .productos--bloque {
+            margin-bottom: 30px;
+          }
+        }
+      }
+}
+
+

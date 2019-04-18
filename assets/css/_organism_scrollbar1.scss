@@ -1,0 +1,237 @@
+.resumenInversiones {
+  text-align: left;
+  position: relative;
+  margin-top: 1em;
+
+  .resumen--bloque {
+    min-height: 300px !important;
+    background: $color-blanco;
+    position: relative;
+    padding: 1em;
+    height: auto;
+    -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+
+    .resumen--bloque__contenido {
+      height: 100%;
+      color: $color-gris-4;
+      position: relative;
+
+
+      // PROGRES BAR EN WIDGET PATRIMONIO (RESUMEN)
+      //VERSION DESKTOP
+      .contenedorScrollme--desktop {
+          max-height: 270px;
+          float: left;
+          width: 100%;
+          margin-top: 10px;
+          .ngsb-wrap {
+              padding: 2em;
+          }
+          .patrimonioWidgetBar {
+              display: inline-table;
+              width: 100%;
+              margin-bottom: 30px;
+              .tituloProgresBar {
+                  @include lato-bold-600;
+                  margin-bottom: 9px;
+              }
+              .porcentajeProgresBar {
+                  float: left;
+                  color: #5BABBF;
+              }
+              .totalProgresBar {
+                  float: right;
+              }
+              .contenedorProgresBar {
+                  height: 2px;
+                  background-color: #E3E3E3;
+                  width: 100%;
+                  margin-top: 34px;
+              }
+              .patrimonioWidgetBar--contenedorDatos-empresa {
+                  width: 100%;
+                  float: left;
+              }
+              .patrimonioWidgetBar--contenedorDatos-personas {
+                  width: 63%;
+                  float: left;
+              }
+              .patrimonioWidgetBar--progresBar {
+                  background-color: #5BABBF !important;
+                  height: 2px;
+              }
+              .patrimonioWidgetBar--boton {
+                  width: 30%;
+                  min-width: 0 !important;
+                  margin: 14px auto 0 auto !important;
+                  /* position: relative; */
+                  float: right;
+                  text-align: center;
+                  display: flex;
+                  display: -ms-flexbox;
+
+                  span {
+                      margin: auto;
+                  }
+              }
+          }
+          .ultimo-hijo {
+              margin-bottom: 50px !important;
+          }
+      }
+
+      // PROGRES BAR EN WIDGET PATRIMONIO (RESUMEN)
+      //VERSION MOBILE
+      .contenedorScrollme--mobile {
+          margin: auto;
+          height: 100%;
+          padding: 15px;
+          .patrimonioWidgetBar {
+              display: inline-table;
+              width: 100%;
+              margin-bottom: 30px;
+              .tituloProgresBar {
+                  @include lato-bold-600;
+                  margin-bottom: 9px;
+              }
+              .porcentajeProgresBar {
+                  float: left;
+                  color: #5BABBF;
+              }
+              .totalProgresBar {
+                  float: right;
+              }
+              .contenedorProgresBar {
+                  height: 2px;
+                  background-color: #E3E3E3;
+                  width: 100%;
+                  margin-top: 34px;
+              }
+              .patrimonioWidgetBar--contenedorDatos {
+                  width: 63%;
+                  float: left;
+              }
+              .patrimonioWidgetBar--progresBar {
+                  background-color: #5BABBF !important;
+                  height: 2px;
+              }
+              .patrimonioWidgetBar--boton {
+                  width: 30%;
+                  min-width: 0 !important;
+                  margin: 14px auto 0 auto !important;
+                  /* position: relative; */
+                  float: right;
+                  text-align: center;
+                  display: flex;
+                  display: -ms-flexbox;
+                  span {
+                      margin: auto;
+                  }
+              }
+          }
+      }
+
+    }
+  }
+} //fin resumenInversiones
+
+/* BOTONES */
+.md-button.boton1 {
+	color:$color-blanco;
+	background-color: $color-azul-1;
+	border-radius: 0;
+
+	min-height: 2.3em;
+	min-width: 11.3em;
+	vertical-align: top;
+  font-family: 'Lato';
+	span{
+		vertical-align: middle;
+	}
+}
+
+.md-button.boton2 {
+	color:$color-azul-1;
+	background-color: $color-blanco;
+	border-radius: 0;
+	min-height: 2.3em;
+	min-width: 11.3em;
+	vertical-align: top;
+  font-family: 'Lato';
+	span{
+		vertical-align: middle;
+	}
+}
+
+.md-button.boton1:not([disabled]) {
+  color:$color-blanco;
+	background-color: $color-azul-1;
+}
+.md-button.boton1:not([disabled]):hover //,  .md-button.boton3:not([disabled]):hover //
+ {
+	color:$color-blanco;
+	background-color: $color-azul-1;
+}
+
+.md-button.boton1, .md-button.boton2 {
+	min-width: inherit;
+	width: 100%;
+	margin: 0;
+}
+
+//COMIENZO MEDIA QUERIES
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+@media (max-width:767px){
+  .resumenInversiones {
+    text-align: left;
+    position: relative;
+    margin-top: 1em;
+    .resumen--bloque {
+      background: #FFFFFF;
+      position: relative;
+      padding: 1em;
+      height: auto;
+      -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+      -moz-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+      box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+      .resumen--bloque__contenido {
+        color: #536374;
+        position: relative;
+        min-height: 100%;
+      }
+    }
+  } //fin resumenInversiones
+} // fin max 767
+
+
+  @media screen and (max-width: 991px) {
+    .resumenInversiones {
+      .resumen--bloque {
+        min-height: 200px !important;
+        margin-bottom: 1em;
+        .resumen--bloque__contenido {
+          min-height: 100%;
+          position: inherit;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .resumenInversiones {
+      .resumen--bloque {
+        min-height: 200px !important;
+        margin-bottom: 1em;
+                height: auto;
+        .resumen--bloque__contenido {
+          min-height: 100%;
+          position: inherit;
+        }
+      }
+    }
+  }

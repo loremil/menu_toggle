@@ -1,0 +1,43 @@
+/*17-05*/
+.contenedor--cajainternet{
+  padding-top: 1em;
+}
+.destino--boton_pago {
+   .pago--label {
+      // line-height: 1.5em;
+      color: $color-active;
+      display: block;
+      font-size: 12px; }
+      margin-top: 18px;
+   .pago--boton {
+      width: 150px;
+      text-align: left;
+   .boton--banco {
+     font-size: 20px;
+     padding-bottom: 10px; }
+    }
+  }
+
+.datosSeleccion{
+   margin: 0;
+}
+
+  .pullRight {
+    display: flex;
+    display: -ms-flexbox;
+    align-self: flex-end;
+    }
+
+    @media (max-width:767px){
+      .pullRight {
+        display: flex;
+        display: -ms-flexbox;
+        align-self: flex-start;
+        -ms-flex-item-align:start ;
+         }
+
+        }
+
+    @media (min-width: 768px) and (max-width: 991px){
+
+          }

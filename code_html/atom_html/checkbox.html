@@ -1,0 +1,97 @@
+<section ng-controller="formularioCtrl">
+    <div class="ban-container">
+        <div class="card h--marginBottom2">
+            <div class="ban-row wow fadeInDown">
+                <div class="ban-row wow fadeInDown">
+                    <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                        <div class="condiciones">
+                            <div class="ban-row">
+                                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                                    <md-input-container class="input--dropdowns">
+                                        <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 1">
+                                            Item 1
+                                        </md-checkbox>
+                                        <md-checkbox id="check" name="check" ng-model="datachecked.check1" aria-label="Checkbox 2">
+                                            Item 2
+                                        </md-checkbox>
+                                    </md-input-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section ng-controller="formularioCtrl">
+    <div class="ban-container">
+        <div class="card h--paddingBottom2">
+            <div class="ban-row wow fadeInDown">
+                <div class="ban-row wow fadeInDown">
+                    <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                        <div class="condiciones">
+                            <div class="ban-row">
+                                <div class="ban-col-xs-12 ban-col-sm-12 ban-col-md-12">
+                                    <md-input-container class="input--dropdowns">
+                                        <md-checkbox id="check" name="check" ng-model="datachecked.check" aria-label="Checkbox 2">
+                                            He leído y acepto las condiciones
+                                        </md-checkbox>
+                                    </md-input-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- bloque 03 -->
+    </div>
+    <div class="ban-container h--paddingTop1 h--paddingBottom1">
+
+        <div ng-show="datachecked.check">
+            <div ng-include src="'code_html/atom_html/checkbox_include.html'"></div>
+        </div>
+    </div>
+
+</section>
+
+
+<section ng-controller="FavoritosCtrl" ng-init="init()">
+    <div class="ban-container">
+        <div class="card h--marginTop">
+            <div class="misAccesosFavoritos wow fadeInDown">
+                <div ng-cloak class="misAccesosFavoritos--navTabs">
+                    <md-tabs md-border-bottom>
+                        <md-tab label="{{itemMenu.nombre}}" ng-repeat="itemMenu in menu">
+                            <div>
+                                <md-list ng-cloak>
+                                    <md-list-item ng-repeat="subMenuItem in itemMenu.subMenu"> <span class="{{subMenuItem.icono}}"></span>
+                                        <p>{{subMenuItem.nombre}}</p>
+                                        <md-checkbox class="md-secondary" ng-click="agregarFavorito($event, subMenuItem)"></md-checkbox>
+                                    </md-list-item>
+                                </md-list>
+                            </div>
+                        </md-tab>
+                    </md-tabs>
+                </div>
+                <div class="misAccesosFavoritos--iconosContenedor">
+                    <h4>Contenedor</h4>
+                    <div class="iconosFavoritos">
+                        <md-fab-speed-dial md-open="true" md-direction="left" ng-class="md-fling">
+
+                            <md-fab-actions>
+                                <md-button aria-label="Twitter" class="md-fab md-raised md-mini" ng-repeat="itemFav in favList">
+                                    <span class="{{itemFav.icono}}"></span>
+                                </md-button>
+                            </md-fab-actions>
+                        </md-fab-speed-dial>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

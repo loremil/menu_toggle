@@ -1,0 +1,820 @@
+//09-06
+._md-datepicker-floating-label > label:not(.md-no-float):not(._md-container-ignore) {
+    right: auto;
+}
+.md-datepicker-expand-triangle{
+    display: block;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    text-align: end;
+    width: 24px;
+    margin: 0 4px;
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+    font-size: 1.2rem;
+    position: initial;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: auto;
+    border-left: initial;
+    border-right: initial;
+    border-top: initial;
+    &:after{
+      display: block;
+      content: '\25BC';
+      position: relative;
+      top: 2px;
+      left: -6px;
+      speak: none;
+      font-size: 16px;
+      -webkit-transform: scaleY(0.6) scaleX(1);
+      transform: scaleY(0.6) scaleX(1);
+      color: #536374;
+    }
+}
+md-input-container:not(.md-input-invalid).md-input-focused md-icon{
+  color: #5BABBF;
+}
+._md-datepicker-floating-label > md-datepicker .md-datepicker-button{
+  display: none;
+}
+
+.contenedorDatos{
+        padding: 0 1.8em 3em;;
+  .contenedor--titulo {
+      text-align: center;
+      padding-top: 3em;
+      .titulo--icono{
+        i.material-icons {
+          color: #7ED321;
+          @include font-60;
+        }
+      }
+      .titulo--usuario{
+        .usuario--nombre {
+          color: #4A4A4A;
+          padding: 0 0 0.8em;
+          @include font-20;
+        }
+        .usuario--texto{
+          padding: 0 0 0.4em;
+          color: #4A4A4A;
+          @include font-36;
+          @include lato-light;
+        }
+        .usuario--texto__pie{
+          padding: 0.5em 0 1em;
+          line-height: 1.4em;
+          color: #4a4a4a;
+          width: 70%;
+          margin: 0 auto;
+          color: #536374;
+        }
+      }
+  }
+
+  .contenedor--perfil{
+    .perfil--titulo{
+      padding: 1em 0 0.3em;
+      line-height: 1.2em;
+      border-bottom: 1px solid #CCD1D9;
+      margin-bottom: 1em;
+      @include font-18;
+    }
+    .perfil--contenido{
+      text-align: center;
+      .contenido--marco{
+        display: flex;
+        display: -ms-flexbox;
+        padding-bottom: 0.5em;
+        img{
+          margin-right: 1em;
+          height: 60px;
+          padding-left: 1em;
+        }
+        .marco--info{
+          text-align: left;
+          padding-top: 0.6em;
+          .calculado--title{
+            display: inline;
+            padding-bottom: 0.7em;
+            @include font-18;
+            @include lato-bold-600;
+          }
+          .calculado--texto{
+            line-height: 1.4em;
+            color: #519CAD;
+            padding-right: 1.5em;
+            @include font-16;
+            @include lato-bold-600;
+            &.title--resultado{
+              padding-top: 0.5em;
+              @include font-14;
+              @include lato-normal;
+            }
+          }
+        }
+      }
+      .boton--width{
+        padding: 2em 1em 0;
+        .boton--perfil{
+          width: 100%;
+          color: #336A9B;
+          background-color: rgba(255, 255, 255, 0.96) !important;
+          margin: 0;
+        }
+      }
+    }
+    .contenido--actuacion{
+      vertical-align: top;
+      @include font-14;
+      @include lato-bold-600;
+      .actuacion--porcent{
+        display: block;
+        padding-bottom: 0.5em;
+        padding-top: 0.3em;
+        @include font-12;
+        @include lato-normal;
+      }
+      &.actuacion--bg{
+        background-color: #F0F2F5;
+        padding: 2em 1em 1.5em;
+      }
+    }
+    .contenido--descrip {
+        color: #FFF;
+        font-size: 12px;
+        padding: 5px 12px;
+        border-radius: 2px;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        &.descrip--activo{
+          padding: 1.5em 1.5em;
+          color: #536374;
+          background-color: #F8F9FA;
+          border-radius: 3px;
+          border: 1px solid #CCD1D9;
+          display: flex;
+          display: -ms-flexbox;
+          margin-top: 0.7em;
+          margin-bottom: 0;
+          .marco--tooltip{
+            padding-left: 0.5em;
+            line-height: 1.3em;
+            @include lato-normal;
+          }
+        }
+    }
+
+    .perfil--productos{
+      background-color: #F0F2F5;
+      padding: 0.8em;
+      box-sizing:border-box;
+      margin-bottom: 1em;
+      .productos--servicios{
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        padding: 0.3em 0;
+        i.material-icons{
+          padding: 0 0.3em;
+          @include font-16;
+        }
+        .servicios--texto{
+          display: inline-block;
+          vertical-align: top;
+          padding-left: 0.4em;
+          @include font-14;
+        }
+      }
+    }
+    md-input-container.perfil--input{
+      width: 100%;
+    }
+    .perfil--titulo__check {
+        padding-top: 1em;
+        @include font-16;
+    }
+    .perfil--check{
+        margin-bottom: 0.8em;
+        color: #486C7C;
+        display: inline-flex;
+        align-items: center;
+        &.inactivo{
+          color: #D0D2D3;
+        }
+    }
+    .perfil--select{
+        padding-left: 1em;
+    }
+  }
+  /*botones*/
+  .contenedor--boton{
+    width: 190px;
+    padding: 1.1em 0;
+    background-color: #F0F2F5;
+    margin-bottom: 1em;
+    .boton--texto {
+        display: inline-block;
+        line-height: 1.2em;
+        text-transform: initial;
+        vertical-align: middle;
+        @include font-14;
+        &.texto--largo{
+          width: 69%;
+          white-space: pre-line;
+          text-align: left;
+        }
+    }
+    .boton--icon{
+      color: #4a4a4a;
+      vertical-align: middle;
+      padding-right: 0.2em;
+      @include font-34;
+    }
+    .boton--icon--tipograf{
+      color: #4a4a4a;
+      @include font-26;
+      vertical-align: middle;
+    }
+
+    .boton--img{
+      display: inline-block;
+      vertical-align: middle;
+      height: 30px;
+      padding-right: 0.5em;
+    }
+
+  }
+
+  .contenedor--mdCardPerfil{
+    margin: 1em 2em;
+    .contenedor--preferencias{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      padding: 0.7em;
+      .preferencias--img {
+        display: inline-block;
+      }
+      .preferencias--objetivo{
+        display: inline-block;
+        vertical-align: middle;
+        color: #4A4A4A;
+        padding-left: 1em;
+        padding-top: 0.3em;
+        .objetivo--title{
+          padding-top: 0.3em;
+          padding-bottom: 0.6em;
+          @include font-18;
+        }
+        .objetivo--texto{
+          padding: 0 0 1em;
+          color: #536374;
+          line-height: 1.3em;
+          @include font-14;
+        }
+      }
+    }
+  }
+}
+
+
+  .boton--back{
+    float: left;
+    padding-top: 0.5em;
+    i.material-icons{
+      @include font-42;
+      color: #336A9B;
+      vertical-align: middle;
+    }
+  }
+  .boton--next{
+    float: right;
+    padding-top: 0.5em;
+    i.material-icons{
+      @include font-42;
+      color: #336A9B;
+      vertical-align: middle;
+    }
+  }
+  .info{
+    &.info--display {
+      padding-top: 1.8em;
+    }
+  }
+
+.tituloNavegacion {
+    background-color: #535557;
+    margin-top: 45px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.22);
+    z-index: 10;
+    .tituloNavegacion--texto{
+      color: #FFFFFF;
+      padding: 0.8em;
+      @include font-34;
+      @include lato-light;
+    }
+}
+
+.actualizacionPasos--perfil {
+  /*  padding-bottom: 1em;*/
+}
+
+
+.titulo--check{
+  i.material-icons{
+    color: #7ED321;
+    @include font-60;
+  }
+}
+.check--atencion{
+  i.material-icons{
+    color: #F69D00;
+    @include font-60;
+  }
+}
+
+
+.barraProgress{
+    padding: 0;
+    text-align: center;
+    padding-bottom: 1.1em;
+    md-progress-linear ._md-container {
+        background: transparent;
+        height: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    md-progress-linear ._md-container ._md-bar {
+        background: #7EB645;
+        height: 10px;
+        width: 100%;
+    }
+    .barraProgress--linea {
+        margin: 0;
+        padding: 0 0 1.5em;
+    }
+    .progress--porcentaje {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        line-height: 40px;
+        width: 19%;
+        display: inline-block;
+        text-align: left;
+        .porcentaje--texto {
+            font-size: 15px;
+            color: $background-body;
+            width: 100%;
+            margin-right: 30px;
+        }
+        .texto--icono {
+            color: #535557;
+            padding: 4px 8px;
+            margin: 0 8px 0 0;
+            border-radius: 50px;
+            background: $color-caption;
+        }
+
+        .texto--icono__destacado {
+            color: #FFFFFF;
+            padding: 4px 8px;
+            margin: 0 8px 0 0;
+            border-radius: 50px;
+            background: #4990E2;
+        }
+        .porcentaje--ok {
+            padding: 4px 5px;
+            margin: 0 8px 0 0;
+            border-radius: 50px;
+            background: #86C646;
+            color: $color-secundario;
+            i {
+              font-size: 15px;
+              line-height: 14px;
+              vertical-align: middle;
+              margin: 0px !important;
+              padding: 0px !important;
+              width: auto;
+              height: auto;
+            }
+        }
+        .porcentaje-texto_ok{
+          color: #86C646 !important;
+        }
+        .porcentaje--vacio{
+            width: 0px;
+            margin: 0px;
+            padding: 0px;
+            height: 0px;
+        }
+        .texto--descrip{
+            @include font-18;
+        }
+        .texto--desactivado{
+            color: #9B9B9B;
+            @include font-18;
+        }
+
+    }
+    .check--title {
+      display: inline-block;
+      vertical-align: middle;
+      @include font-18;
+      &.check__inactive{
+        color: #E5E4E5;
+      }
+    }
+    .check--numero{
+      background-color: #336A9B;
+      color: #FFFFFF;
+      border-radius: 50%;
+      height: 26px;
+      width: 26px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1.5em;
+      margin-right: 0.5em;
+      @include font-16;
+      &.check__inactive{
+        background-color: #E5E4E5;
+      }
+    }
+
+    .check-active{
+      color: #7EB645;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.5em;
+      i.material-icons{
+        font-size: 28px;
+      }
+    }
+}
+
+.checkActualizacion{
+  width: 24%;
+  display: inline-block;
+  vertical-align: middle;
+      text-align: left;
+}
+.configuracion--background {
+  background-image: url(../images/bg_empresas_actualizar.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 105px;
+  position: absolute;
+}
+
+
+
+.contenedor--mdCard{
+  min-height: 310px;
+  .card--imagen{
+    padding: 0.9em 0.9em 0 0.9em;
+    text-align: center;
+    img{
+      max-width: 100%;
+    }
+  }
+  .card--info {
+    padding: 1em 0.9em;
+    line-height: 1.3em;
+    text-align: center;
+    color: #536374;
+    @include font-14;
+    .info--title  {
+      text-align: center;
+      padding-top: 0.3em;
+      padding-bottom: 0.6em;
+      @include font-18;
+    }
+    .info--texto {
+      padding-top: 0.5em;
+      .texto__colorUno{
+        color:#dd2c00;
+        @include lato-normal;
+      }
+      .texto__colorDos{
+        color:#9B9B9B;
+        @include lato-normal;
+      }
+    }
+  }
+}
+
+
+  .card--user {
+    background: #F0F2F5;
+    padding: 0 1.5em 1em;
+    border-radius: 2px;
+    margin:1.3em 1.5em;
+    padding: 2em 1.5em;
+    &.h--topbottom1_5{
+      padding-top: 1em;
+    }
+    &.h--bgTransparent{
+      background: transparent;
+    }
+    .infoUser {
+      .infoUser--nombre {
+        font-weight: 500;
+        line-height: 1em;
+        @include font-18;
+        color:#536374;
+      }
+      .infoUser--cedula {
+        line-height: 2em;
+        color:#536374;
+      }
+    }
+    .user--img{
+      text-align: center;
+      padding-top: 1.5em;
+    }
+    .input--dropdowns{
+
+    }
+  }
+
+.infoUser{
+  .infoUser--radioButton {
+    padding-bottom: 1em;
+    .infoUser--respuesta {
+      margin-top: 1.5em;
+      padding-left: 1em;
+      width: 100%;
+      @include font-14;
+      md-radio-button{
+        margin-left: 0.5em;
+      }
+    }
+    .perfil--titulo {
+      padding-left: 0.5em;
+      padding-top: 0.5em;
+      @include font-16;
+    }
+  }
+}
+
+.contenedor--preguntas {
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    .preguntas--titulo{
+      line-height: 26px;
+      margin: 1.2em 0 0.8em;
+      text-align: center;
+      @include font-22;
+      @include lato-light;
+    }
+}
+
+
+.datosDireccion--container {
+  margin-top: 0.5em;
+}
+.datosIniciales {
+    padding-top: 1.5em;
+    border-bottom: 1px solid #CCD1D9;
+    padding-bottom: 0.5em;
+    @include font-16;
+}
+
+
+
+  .contenedor--subtitulo{
+    .item--border{
+      padding-bottom: 0;
+    }
+  }
+
+
+.ban-paddingCenter{
+  padding: 0 4em;
+}
+.h--borde__datos{
+  border-bottom: 1px solid #CCD1D9 !important;
+  padding-bottom: 0.1em;
+}
+
+.marco--select{
+  padding: 1.1em 0 1em 1em;
+  display: inline;
+  vertical-align: sub;
+  border-radius: 2px;
+  &.md-checked {
+      background-color: #F0F2F5;
+  }
+  .select--marco{
+    display: inline-block;
+    width: 17%;
+    &.inactivo{
+      color: #D0D2D3;
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+  .contenedorDatos{
+    .contenedor--boton{
+      width: 40%;
+    }
+  }
+  .datosPersonales--info {
+    margin-bottom: 1em;
+  }
+  .card--user{
+    .infoUser--info {
+      margin-left: 10.2em;
+      margin-top: -4.8em;
+    }
+    .infoUser{
+      .infoUser--container{
+        vertical-align: middle;
+        margin-top: -3em;
+      }
+    }
+  }
+
+  .ban-paddingCenter{
+    padding: 0 !important;
+  }
+  .marco--select{
+    display: inline-block;
+    .select--marco{
+      width: 100%;
+      padding: 0 1em;
+    }
+  }
+}
+@media (max-width:767px){
+  .barraProgress{
+    .check--title{
+      display: none;
+    }
+      .progress--porcentaje{
+        text-align: center;
+        .porcentaje--texto{
+          .texto--descrip, .texto--desactivado{
+            display: none;
+          }
+        }
+      }
+    md-progress-linear{
+      &.h--barracolor{
+        ._md-container{
+          background: #e6e6e6;
+        }
+      }
+    }
+  }
+  .info.info--display{
+      display: none;
+  }
+  .contenedorDatos{
+    padding: 0.5em 0;
+    .contenedor--titulo{
+      .titulo--usuario{
+        .usuario--texto {
+          padding: 0.6em 0;
+          font-weight: 300;
+          line-height: 1em;
+          @include font-26;
+        }
+        .usuario--texto__pie{
+          width: 100%;
+        }
+      }
+    }
+    .contenedor--mdCardPerfil{
+      .contenedor--preferencias{
+        display: block;
+        padding: 0.7em;
+        .preferencias--img {
+          display: block;
+          text-align: center;
+          padding-bottom: 0.5em;
+        }
+        .preferencias--objetivo{
+          display: block;
+          text-align: center;
+          padding-left: 0;
+        }
+      }
+    }
+      .contenedor--boton{
+        width: 90%;
+      }
+      .contenedor--perfil{
+        .perfil--contenido{
+          display: block;
+          text-align: center;
+          .contenido--marco{
+            padding-bottom: 0.5em;
+          }
+        }
+      }
+  }
+    .card--user{
+      margin: 0 0.8em;
+     .infoUser--info{
+      margin-left: 1em;
+      margin-top: 0em;
+      padding-right: 1em;
+      text-align: center;
+     }
+     .infoUser{
+       text-align: center;
+       padding: 1em 0 0;
+       .infoUser--container {
+         display: block;
+         padding-left: 0;
+         padding-top: 1em;
+       }
+     }
+
+  }
+  .ban-paddingCenter {
+    padding: 0;
+  }
+  .boton--agregar{
+    min-width: inherit;
+    span {
+      display: none;
+    }
+  }
+  .tituloNavegacion{
+    margin-top: 0;
+  }
+  .infoUser{
+    .infoUser--radioButton{
+      .infoUser--pregunta{
+        line-height: 1.4em;
+      }
+      .infoUser--respuesta{
+        padding-bottom: 1em;
+      }
+    }
+  }
+  .h--padding0{
+    padding: 0;
+  }
+
+  .h--inputDatos{
+    padding-bottom:1em;
+    margin-top: 0;
+  }
+  .contenedor--preguntas{
+    .preguntas--titulo{
+      @include font-18;
+    }
+  }
+  .marco--select{
+    width: 44%;
+    display: inline-block;
+    padding: 0.5em;
+    .select--marco{
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .checkActualizacion {
+    text-align: center;
+  }
+  .datosIniciales {
+    padding-top: 2.5em;
+  }
+  .h--paddingL {
+    padding: 0 0.8em;
+  }
+  .contenedor--perfil {
+    padding: 0 0.8em;
+  }
+  .md-button.boton2{
+    margin-bottom: 1.5em;
+
+  }
+
+}

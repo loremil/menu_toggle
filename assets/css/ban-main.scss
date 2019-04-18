@@ -1,0 +1,50 @@
+//organismos
+// @import 'organism_scrollbar1.scss';
+@import 'variables';
+@import 'generales';
+@import 'header';
+@import 'bandeja';
+@import 'tablas';
+@import 'login';
+@import 'footer';
+@import 'home';
+@import 'bienvenida';
+@import 'resumen';
+@import 'banchilepay';
+// @import 'banchilepaynew';
+@import 'movimientos';
+@import 'documentos';
+@import 'patrimonio';
+@import 'configuracion';
+@import 'modales';
+@import 'componentes-compartidos';
+@import 'favoritos';
+@import 'principal';
+@import 'autorizaciones';
+@import 'elementos';
+@import 'desplegables';
+@import 'helpers';
+@import 'fab';
+@import 'webkit';
+
+/* TRAIDOS DESDE MAIN-PERSONAS */
+@import 'variables';
+@import 'cajainternet';
+@import 'informes';
+@import 'ffmm';
+@import 'cartera-activa';
+@import 'actualizacion';
+@import 'personas';
+@import 'background';
+
+
+/* CLASES ESPECIALESPARA IE */
+@import 'ie10';
+// @import 'tabla';
+
+
+/* THEMES POR SITIOS */
+@import 'theme-wealth';
+@import 'theme-personas';
+@import 'theme-private-wealth';
+@import 'theme-empresa';

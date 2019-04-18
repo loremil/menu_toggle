@@ -1,0 +1,96 @@
+/* body.personas {
+    ESTILOS HEADER
+    header {
+        .menuSitios {
+            li {
+                a {
+                    color: white !important;
+                    &.active {
+                        color: #5BABBF !important;
+                        border-top: 3px solid #5BABBF;
+                    }
+                }
+            }
+        }
+        nav#navegacionPublica {
+            background-color: #535557;
+            .menuPublico--link {
+                color: white !important;
+            }
+            .menuPublicoMobil {
+                md-icon {
+                    i {
+                        color: white !important;
+                    }
+                }
+            }
+            .menuPublico {
+                .menuPublico--item {
+                    &:hover {
+                        &::after {
+                            border-top: 8px solid #626466 !important;
+                        }
+                    }
+                    .menuPublico--link {
+                        color: white;
+                    }
+                    a.menuPublico--link.md-button.md-ink-ripple {
+                        &.activo-menuPublico {
+                            background-color: #626466 !important;
+                        }
+                    }
+                }
+            }
+            .menuLogin {
+                .menuLogin--despliegue {
+                    md-icon {
+                        i {
+                            color: white;
+                        }
+                    }
+                    p {
+                        color: white;
+                    }
+                }
+            }
+        }
+        #headerBanchile--basic {
+            background-color: #535557;
+            .boton--atras {
+                md-icon.material-icons {
+                    color: #FFF;
+                }
+            }
+            .header--logo {
+                background-image: url('../images/logo--Banchile_P.png');
+            }
+        }
+    }
+    FIN ESTILOS HEADER
+    ESTILOS HOME
+    .home--presentacion {
+        background-image: url('../images/bg-header-personas.jpg');
+    }
+    FIN ESTILOS HOME
+    ESTILOS LOGIN
+    .background--login {
+        background-image: url(../images/bg-header-personas.jpg);
+    }
+    .login {
+        .titulo--cliente:before {
+            content: 'persona';
+        }
+    }
+    .login--contenido {
+        background-image: url("../images/seccionBanner-Persona.png");
+        .card--login {
+            .titulo--mensaje {
+                span.titulo--cliente {
+                    &:before {
+                        content: 'Personas';
+                    }
+                }
+            }
+        }
+    }
+} */

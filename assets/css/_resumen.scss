@@ -1,0 +1,263 @@
+.resumenPersonasSlider {
+  margin-bottom: 45px;
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .resumenBanner {
+    display: -ms-flexbox;
+    display: flex;
+    img {
+      width: 50%;
+      object-fit: cover;
+      height: 120px;
+      padding-right: 25px;
+    }
+    .resumenBanner--mensaje {
+      width: 100%;
+      text-align: left;
+      h4 {
+        @include font-18;
+        border-bottom: 1px solid #CCD1D9;
+        padding-bottom: 6px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .swiper-pagination {
+    top: 21px;
+    width: 100%;
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      border-radius: 100%;
+      background: #000;
+      opacity: .2;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    .swiper-pagination-bullet-active {
+      background: #5BABBF;
+      opacity: 1;
+    }
+  }
+}
+
+.resumenInversiones {
+  text-align: left;
+  position: relative;
+  margin-top: 1em;
+  .resumen--bloque {
+    background: #FFFFFF;
+    position: relative;
+    padding: 1em;
+    // height: 639px;
+    -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.14);
+    .resumen--bloque__titulo {
+      padding-bottom: 6px;
+      border-bottom: 1px solid #CCD1D9;
+      margin-bottom: 10px;
+      .bloque--titulo__sub {
+        float: left;
+        .subtitulos {
+          @include font-18;
+        }
+      }
+      .bloque--titulo__vermas {
+        float: right;
+        i.material-icons {
+          color: $color-active;
+        }
+      }
+    }
+    .resumen--bloque__contenido {
+      color: #536374;
+      position: relative;
+      .resumen--detalle {
+        padding-top: 0.4em;
+        img {
+          max-width: 100%;
+        }
+        .detalle--titulo {
+          line-height: 1.875em;
+          font-weight: 600;
+        }
+        .detalle--info {
+          line-height: 1.75em;
+          color: #818A94;
+          font-size: 14px;
+          font-size: 0.875rem;
+        }
+        .detalle--titulo {
+          line-height: 1.875em;
+          @include lato-bold-600;
+          span {
+            float: right;
+          }
+        }
+        .detalle--info {
+          line-height: 1.75em;
+          color: #818A94;
+          @include font-14;
+          span {
+            float: right;
+          }
+        }
+        .detalle--cuadro {
+          background-color: #126574;
+          display: inline-block;
+          height: 15px;
+          margin-top: 0.4em;
+          vertical-align: top;
+          width: 15px;
+          &.detalle--cuadro__b {
+            background-color: #2D8ABB;
+          }
+          &.detalle--cuadro__c {
+            background-color: #B99C79;
+          }
+          &.detalle--cuadro__d {
+            background-color: #635C34;
+          }
+        }
+        .detalle--texto {
+          display: inline-block;
+          padding-left: 0.8em;
+          padding-bottom: 1.3em;
+          vertical-align: middle;
+          .detalle--texto__p {
+            line-height: 1.5em;
+            @include lato-bold-600;
+          }
+          .detalle--texto__s {
+            line-height: 1.5em;
+            @include font-14;
+          }
+        }
+        .detalle--buttom {
+          float: right;
+          margin-right: 0.5em;
+          button.md-raised.boton--ver.btn-lg.btn-block {
+            color: $background-principal;
+          }
+        }
+        &.resumen--detalle__img {
+          text-align: center;
+        }
+        .detalle--grafico {
+          width: 300px;
+          margin-bottom: 1em;
+        }
+      }
+      &.resumen--bloque__patrimonio {
+        min-height: 595px
+      }
+    }
+  }
+  .resumen--contenido__bottom {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    .bottom--ver {
+      text-align: center;
+      margin: 2em 0 0.5em;
+      position: relative;
+      .md-button.boton--ver {
+        color: $color-secundario-azul;
+        background-color: #FFFFFF;
+        padding: 0.3em 1.4em;
+        @include lato-bold-600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .resumenInversiones {
+    .resumen--bloque {
+      min-height: 200px !important;
+      margin-bottom: 1em;
+      height: 100%;
+      .resumen--bloque__contenido {
+        min-height: 100%;
+        position: inherit;
+        .resumen--contenido__bottom {
+          position: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .resumenPersonasSlider {
+    .resumenBanner {
+      flex-direction: column;
+      -ms-flex-direction: column;
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .swiper-pagination {
+      top: 215px;
+      width: 100%;
+    }
+  }
+  .resumenInversiones {
+    .resumen--bloque {
+      min-height: 200px !important;
+      margin-bottom: 1em;
+      .resumen--bloque__contenido {
+        min-height: 100%;
+        position: inherit;
+        .resumen--contenido__bottom {
+          position: inherit;
+          .bottom--ver {
+            .md-button.boton--ver {
+              width: 94%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card--cuenta {
+    .favorito {
+      text-align: center;
+    }
+  }
+  .resumen--contenido__bottom {
+    .bottom--ver {
+      .md-button.boton--ver {
+        width: 94%;
+      }
+    }
+  }
+  .menu {
+    margin-top: 0;
+  }
+}

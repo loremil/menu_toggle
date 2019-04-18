@@ -1,0 +1,379 @@
+<!--  Bars 1 -->
+<div class="breadcrumb ">
+    <div class="ban-col-md-6 ban-col-xs-12">
+        <div class="ban-row">
+            <div class="ban-col-xs-3 bread--uno">Template</div>
+            <div class="ban-col-xs-8 bread--dos"><i class="material-icons">keyboard_arrow_right</i> Bars</div>
+        </div>
+    </div>
+
+</div>
+
+<div class="card--interior">
+    <div class="contenidoDesplegable--info">
+        <div class="info--titulo">
+            <h3 class="info--txt">Bar</h3>
+        </div>
+    </div>
+
+    <div class="caja--componente">
+        <div class="resumenInversiones wow fadeInDown" data-wow-delay="0.5s">
+            <div class="ban-row">
+                <div class="ban-col-sm-12 ban-col-md-7 ban-col-md-push-2">
+                    <div ng-controller="contenedorScrollme">
+                        <div class="contenedorScrollme--desktop" ng-scrollbar ng-if="!isMobile" rebuild-on="rebuild:me" rebuild-on-resize>
+                            <div class="patrimonioWidgetBar" ng-repeat="prod in productoScroll" ng-class="{'ultimo-hijo': $last}">
+                                <div class="patrimonioWidgetBar--contenedorDatos-empresa">
+                                    <h3 class="tituloProgresBar">{{prod.nombre}}</h3>
+                                    <p class="porcentajeProgresBar">{{prod.porcentaje}}</p>
+                                    <p class="totalProgresBar">{{prod.monto}}</p>
+                                    <div class="contenedorProgresBar">
+                                        <div class="patrimonioWidgetBar--progresBar" ng-controller="progress" style=" width:{{progressval}}%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenedorScrollme--mobile" ng-if="isMobile">
+                            <div class="patrimonioWidgetBar" ng-repeat="prod in productoScroll" ng-class="{'ultimo-hijo': $last}">
+                                <div class="patrimonioWidgetBar--contenedorDatos-empresa">
+                                    <h3 class="tituloProgresBar">{{prod.nombre}}</h3>
+                                    <p class="porcentajeProgresBar">{{prod.porcentaje}}</p>
+                                    <p class="totalProgresBar">{{prod.monto}}</p>
+                                    <div class="contenedorProgresBar">
+                                        <div class="patrimonioWidgetBar--progresBar" ng-controller="progress" style=" width:{{progressval}}%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<!--  Inicio Button -->
+<div class="breadcrumb ">
+    <div class="ban-col-md-6 ban-col-xs-12">
+        <div class="ban-row">
+            <div class="ban-col-xs-3 bread--uno">Atom</div>
+            <div class="ban-col-xs-8 bread--dos"><i class="material-icons">keyboard_arrow_right</i> Button</div>
+        </div>
+    </div>
+
+</div>
+<!--  Button 1 y 2 -->
+<div class="card--interior">
+    <div class="contenidoDesplegable--info">
+        <div class="info--titulo">
+            <h3 class="info--txt">Static button</h3>
+        </div>
+    </div>
+
+    <div class="caja--componente">
+        <div class="ban-row">
+            <div class="ban-col-xs-12 h--textCenter">
+                <md-button class="boton1 md-raised primario">boton1</md-button>
+                <md-button class="boton2 md-raised primario">boton2</md-button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="contenedor--componentes">
+        <div class="row">
+            <div class="">
+                <div class="row">
+                    <div class="ban-col-xs-1 info">
+                        <md-icon md-font-set="banicon-informacion titulo--icono">
+                        </md-icon>
+                    </div>
+                    <div class="ban-col-xs-11 caja--texto">
+
+                        <p class="recomendacion--texto">Para ajustar el botón al 100% del tamaño del contenedor, se aplica la clase .h--width. <br /> La clase .boton--xl le da al botón un min-width de 1em</p>
+                    </div>
+                </div>
+                <div class="separador"></div>
+            </div>
+
+        </div>
+
+        <div ng-app=" expandCollapseApp" ng-controller="expandCollapseCtrl">
+            <div ng-controller="expandCollapseCtrl1">
+                <div class="colapsable--codigo ">
+                    <div class="ban-row">
+
+                        <div class="ban-col-xs-12">
+                            <div class="ban-col-xs-12 ">
+
+                                <div class="contenedor--button ban-col-xs-8">
+                                    <md-button class="button--codigo">Html5</md-button>
+                                    <md-button class="button--codigo">Css</md-button>
+                                    <md-button class="button--codigo">Js</md-button>
+                                </div>
+
+                                <div class="ban-col-xs-4">
+                                    <div ng-click="active2= !active2" ng-class="{'quiero-cerrado1': active2, 'quiero-expandido1':!active2}">
+                                        <span class="icono--1">
+                               <i class="material-icons">code</i>
+                            </span>
+                                        <span class="icono--2">
+                            <i class="material-icons">keyboard_arrow_up</i>
+                           </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ban-col-xs-12">
+                            <div class="slideDown" ng-hide="active2">
+                                <div class="contenido--codigo">
+                                    <div class="card--info" ng-include src=" 'code/code_atom/bars1_html_atom.html' "></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  Icon Button -->
+<div class="card--interior">
+    <div class="contenidoDesplegable--info">
+        <div class="info--titulo">
+            <h3 class="info--txt">Icon Button</h3>
+        </div>
+    </div>
+
+    <div class="caja--componente">
+        <div class="card--info" ng-include src=" 'atom/iconbutton_atom1.html' "></div>
+    </div>
+    <div class="contenedor--componentes ">
+        <div class="row">
+            <div class="">
+                <div class="row">
+                    <div class="ban-col-xs-1 info">
+                        <md-icon md-font-set="banicon-informacion titulo--icono">
+                        </md-icon>
+                    </div>
+                    <div class="ban-col-xs-11 caja--texto">
+
+                        <p class="recomendacion--texto"> Faltan flechas anterior y siguiente del paginador. Falta libro boton.</p>
+                    </div>
+                </div>
+                <div class="separador"></div>
+            </div>
+
+        </div>
+
+        <div ng-app=" expandCollapseApp" ng-controller="expandCollapseCtrl">
+            <div ng-controller="expandCollapseCtrl1">
+                <div class="colapsable--codigo ">
+                    <div class="ban-row">
+
+                        <div class="ban-col-xs-12">
+                            <div class="ban-col-xs-12 ">
+
+                                <div class="contenedor--button ban-col-xs-8">
+                                    <md-button class="button--codigo">Html5</md-button>
+                                    <md-button class="button--codigo">Css</md-button>
+                                    <md-button class="button--codigo">Js</md-button>
+                                </div>
+
+                                <div class="ban-col-xs-4">
+                                    <div ng-click="active2= !active2" ng-class="{'quiero-cerrado1': active2, 'quiero-expandido1':!active2}">
+                                        <span class="icono--1">
+                           <i class="material-icons">code</i>
+                        </span>
+                                        <span class="icono--2">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                       </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ban-col-xs-12">
+                            <div class="slideDown" ng-hide="active2">
+                                <div class="contenido--codigo">
+                                    <div class="card--info" ng-include src=" 'code/code_atom/bars1_html_atom.html' "></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="breadcrumb ">
+    <div class="ban-col-md-6 ban-col-xs-12">
+        <div class="ban-row">
+            <div class="ban-col-xs-3 bread--uno">Atom </div>
+            <div class="ban-col-xs-8 bread--dos"><i class="material-icons">keyboard_arrow_right</i>Checkbox</div>
+
+        </div>
+
+    </div>
+
+</div>
+<!--  Button ? -->
+<div class="card--interior">
+    <div class="contenidoDesplegable--info">
+        <div class="info--titulo">
+            <h3 class="info--txt">boton?</h3>
+        </div>
+    </div>
+
+    <div class="caja--componente">
+
+        <div class="ban-row">
+            <div class="ban-col-xs-12 h--textCenter">
+                <div class="contenedor--botones">
+                    <md-button class="boton md-raised primario">boton?</md-button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor--componentes ">
+        <div class="row">
+            <div class="">
+                <div class="row">
+                    <div class="ban-col-xs-1 info">
+                        <md-icon md-font-set="banicon-informacion titulo--icono">
+                        </md-icon>
+                    </div>
+                    <div class="ban-col-xs-11 caja--texto">
+
+                        <p class="recomendacion--texto">Sin descripción</p>
+                    </div>
+                </div>
+                <div class="separador"></div>
+            </div>
+
+        </div>
+
+        <div ng-app=" expandCollapseApp" ng-controller="expandCollapseCtrl">
+            <div ng-controller="expandCollapseCtrl1">
+                <div class="colapsable--codigo ">
+                    <div class="ban-row">
+
+                        <div class="ban-col-xs-12">
+                            <div class="ban-col-xs-12 ">
+
+                                <div class="contenedor--button ban-col-xs-8">
+                                    <md-button class="button--codigo">Html5</md-button>
+                                    <md-button class="button--codigo">Css</md-button>
+                                    <md-button class="button--codigo">Js</md-button>
+                                </div>
+
+                                <div class="ban-col-xs-4">
+                                    <div ng-click="active2= !active2" ng-class="{'quiero-cerrado1': active2, 'quiero-expandido1':!active2}">
+                                        <span class="icono--1">
+                               <i class="material-icons">code</i>
+                            </span>
+                                        <span class="icono--2">
+                            <i class="material-icons">keyboard_arrow_up</i>
+                           </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ban-col-xs-12">
+                            <div class="slideDown" ng-hide="active2">
+                                <div class="contenido--codigo">
+                                    <div class="card--info" ng-include src=" 'code/code_atom/bars1_html_atom.html' "></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--  Boton select -->
+<div class="card--interior">
+    <div class="contenidoDesplegable--info">
+        <div class="info--titulo">
+            <h3 class="info--txt">boton?</h3>
+        </div>
+    </div>
+
+    <div class="caja--componente">
+
+        <div class="ban-row">
+
+        </div>
+
+        <div class="contenedor--componentes ">
+            <div class="row">
+                <div class="">
+                    <div class="row">
+                        <div class="ban-col-xs-1 info">
+                            <md-icon md-font-set="banicon-informacion titulo--icono">
+                            </md-icon>
+                        </div>
+                        <div class="ban-col-xs-11 caja--texto">
+
+                            <p class="recomendacion--texto">Sin descripción</p>
+                        </div>
+                    </div>
+                    <div class="separador"></div>
+                </div>
+
+            </div>
+
+            <div ng-app=" expandCollapseApp" ng-controller="expandCollapseCtrl">
+                <div ng-controller="expandCollapseCtrl1">
+                    <div class="colapsable--codigo ">
+                        <div class="ban-row">
+
+                            <div class="ban-col-xs-12">
+                                <div class="ban-col-xs-12 ">
+
+                                    <div class="contenedor--button ban-col-xs-8">
+                                        <md-button class="button--codigo">Html5</md-button>
+                                        <md-button class="button--codigo">Css</md-button>
+                                        <md-button class="button--codigo">Js</md-button>
+                                    </div>
+
+                                    <div class="ban-col-xs-4">
+                                        <div ng-click="active2= !active2" ng-class="{'quiero-cerrado1': active2, 'quiero-expandido1':!active2}">
+                                            <span class="icono--1">
+                               <i class="material-icons">code</i>
+                            </span>
+                                            <span class="icono--2">
+                            <i class="material-icons">keyboard_arrow_up</i>
+                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ban-col-xs-12">
+                                <div class="slideDown" ng-hide="active2">
+                                    <div class="contenido--codigo">
+                                        <div class="card--info" ng-include src=" 'code/code_atom/bars1_html_atom.html' "></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

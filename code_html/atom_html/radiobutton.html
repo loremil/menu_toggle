@@ -1,0 +1,65 @@
+<div class="ban-row">
+
+    <div class="ban-col-md-6">
+        <form name="empresaForm">
+            <div ng-controller="ActualizacionController" class="wow fadeInDown">
+                <div class="contenedor--perfil">
+                    <div class="ban-row">
+                        <div class="ban-col-sm-6 ban-col-md-8">
+
+                            <div class="contenido--actuacion">
+                                <md-radio-group ng-model="demo.showTooltip" class="">
+                                    <div class="marco--select">
+                                        <md-radio-button value="Conservador" class="md-primary md-primary ">Opcion 1</md-radio-button>
+                                    </div>
+                                    <div class="marco--select">
+                                        <md-radio-button value="Prudente" class="md-primary">Opcion 2</md-radio-button>
+                                    </div>
+                                </md-radio-group>
+                            </div>
+                            <div class="contenido--descrip">
+                                <md-tooltip class="marco--tooltip" md-visible="demo.showTooltip == 'Conservador'">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</md-tooltip>
+                                <md-tooltip class="marco--tooltip" md-visible="demo.showTooltip == 'Prudente'">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</md-tooltip>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="ban-col-md-6">
+        <div class="ban-container">
+            <form name="usuarioForm">
+
+                <div ng-controller="agregarOtro">
+
+                    <div ng-repeat="item in items" ng-controller="EditarUsuarioCtrl as cc">
+                        <div class="ban-row wow fadeInDown">
+                            <div class="ban-col-xs-12 ban-col-sm-3 ban-col-sm-push-9 ban-col-md-4 ban-col-md-push-8">
+                            </div>
+                            <div class="ban-col-xs-12 ban-col-sm-9 ban-col-sm-pull-3 ban-col-md-8 ">
+                                <md-radio-group class="md-primary" ng-model="cc.selectedId1">
+                                    <div ng-repeat='person in cc.contacts1' class="input--roles">
+                                        <md-radio-button ng-value="person.id" ng-disabled="person.isDisabled">
+                                            {{person.fullName}}
+                                        </md-radio-button>
+                                    </div>
+                                </md-radio-group>
+
+                                <p class="input--roles__roles">
+                                    <span class="lastName"></span>{{cc.selectedUser1()}}
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+        </form>
+    </div>
+
+</div>
+</div>

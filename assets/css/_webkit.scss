@@ -1,0 +1,990 @@
+.documentos{
+  padding-top: 0em;
+  md-tab-content {
+    padding-top: 1em;
+  }
+  md-tabs-canvas {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    a:focus, a:active {
+      text-decoration: none;
+      }
+    }
+  md-pagination-wrapper {
+    width: 64em !important;
+  }
+  md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+    height: 0.25em; }
+
+  md-tabs.md-default-theme .md-tab, md-tabs .md-tab {
+    text-transform: inherit;
+    color: inherit;
+    padding: 12px 50px 12px 50px;
+    @include font-16;
+    @include lato-normal;
+  }
+  md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon {
+    font-weight: bold; }
+  md-tabs .md-tab .md-ripple-container {
+   color: $color-botones;
+  }
+  md-tabs md-ink-bar {
+    background: $color-active;
+    color: $color-active;
+  }
+
+
+  .instrucciones--acciones{
+    background-color: $color-secundario-blanco;
+    padding: 2em 0em 2em 0em;
+    text-align: right;
+  }
+}
+
+
+.misDatos md-tabs-wrapper {
+    padding: 1.5em;
+    background: #FFF;
+}
+
+@media (max-width:767px){
+  .documentos md-tabs.md-default-theme .md-tab, .documentos md-tabs .md-tab{
+    padding: 12px 1em;
+  }
+  .misDatos md-tabs-wrapper{
+    padding: 0.8em 0em;
+  }
+}
+
+//fin base código//
+
+
+.contenedor--mdCardContenido_webkit{
+  padding-top: 3em;
+    background-color:$color-blanco;
+    padding-bottom: 50px;
+    overflow: scroll;
+    // height:685px!important;
+}
+
+.contenedor--mdCardNav_webkit {
+    // background-color: $color-blanco;
+    height:685px;
+    overflow: scroll;
+
+    .card--nav_webkit {
+      // background-color: $color-blanco;
+      padding-top: 80px;
+      height: auto;
+      overflow:scroll !important;
+
+
+        .expandcollapseNav--item {
+          padding-top: 30px;
+
+          .nav--itemTitulo{ //boton grande
+            border-color:$color-gris-3;
+              border-style:solid;
+              border-width:0 0 1px;
+            color:$color-gris-5;
+            @include lato-bold-600;
+            @include font-18;
+            padding-bottom: 10px;
+            padding-left:30px;
+            }
+          .expandcollapseNav--subItem{ //boton pequeño
+              @include lato-normal;
+              @include font-14;
+              padding-left:30px;
+                li {
+                    padding-top:20px;
+                    color:$color-gris-3;
+                }
+
+            }
+          }
+        }
+    }
+
+
+    /*
+    animation menuLateral*/
+
+    .slideDown.ng-hide {
+      height:0;
+      transition:height 0.35s ease;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .slideDown {
+      // height:141px;
+      padding-bottom: 40px;
+      height: 450px;
+      transition:height 0.35s ease;
+      overflow:hidden;
+      position:relative;
+    }
+    .slideDown2 {
+      // height:141px;
+      padding-bottom: 40px;
+      height: 40px;
+      transition:height 0.35s ease;
+      overflow:hidden;
+      position:relative;
+    }
+    .slideDown3 {
+      // height:141px;
+      padding-bottom: 40px;
+      height: 300px;
+      transition:height 0.35s ease;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .slideDown.ng-hide-remove,
+    .slideDown.ng-hide-add {
+      /* remember, the .hg-hide class is added to element
+      when the active class is added causing it to appear
+      as hidden. Therefore set the styling to display=block
+      so that the hide animation is visible */
+      display:block!important;
+    }
+
+
+    .slideDown.ng-hide-add {
+      animation-name: hide;
+      -webkit-animation-name: hide;
+
+      animation-duration: .5s;
+      -webkit-animation-duration: .5s;
+
+      animation-timing-function: ease-in;
+      -webkit-animation-timing-function: ease-in;
+    }
+
+
+
+    .slideDown.ng-hide-remove {
+      animation-name: show;
+      -webkit-animation-name: show;
+
+      animation-duration: .5s;
+      -webkit-animation-duration: .5s;
+
+      animation-timing-function: ease-out;
+      -webkit-animation-timing-function: ease-out;
+    } //fin animate menuLateral
+
+header {
+        nav#navegacionPublica {
+            background-color: $color-primario !important;
+        }
+}
+
+.breadcrumb {
+  margin-top:20px;
+  height: 55px;
+  background-color: $color-primario;
+  color:$color-blanco;
+  padding: 1em 0.2em 0.1em 0.2em;
+  @include lato-light;
+
+
+  .bread--uno{
+    // border-style: solid;
+    // border-color:red;
+    // border-width: medium;
+    padding-left:20px;
+    padding-top:10px;
+    @include font-24;
+
+
+  }
+
+
+  .bread--dos{
+    // border-style: solid;
+    // border-color:red;
+    // border-width: medium;
+    padding-top: 5px;
+    padding-left:0px;
+    @include font-30;
+
+  }
+
+}
+
+.card--interior{
+  padding: 0em 3em 5em 3em;
+
+    .contenedor--row{
+      // width: 100%;
+      padding: 0em 0em 0em 0em;
+      margin: 0em;
+      // background: green;
+
+    }
+
+  .contenidoDesplegable--info {
+    .info--titulo {
+      padding-top: 4em !important;
+      }
+  }
+
+  .caja--componente {
+    min-height: 60px;
+    padding: 10%;
+
+    .contenedor--botones {
+      border-radius: 0.2em;
+      min-height:2em;
+      padding: 1em 1em 3em 1em !important;
+    }
+  }
+
+  .contenedor--componentes {
+    background-color:$color-gris-1;
+    border-radius:0em;
+    padding: 0em 0.2em 0.2em 0.2em !important;
+  }
+}
+
+.icono-info {
+  padding: 0.8em 0em 0em 0em !important;
+}
+
+.caja--texto {
+  min-height: 30px;
+  padding:1em 1em 2em 1em;
+  p {
+  padding-top: 2em;
+  @include font-14;
+  line-height: 1.5em;
+  text-align: justify;
+  }
+}
+
+
+.separador {
+  border-bottom: 0.01em solid #CCD1D9;
+}
+
+
+.contenidoDesplegable--info {
+  border: 0px !important;
+  padding: 0em 0em 1.5em 0em !important;
+}
+
+//inicio base código//
+
+.campo_codigo{
+  padding-top: 2em;
+  padding-bottom: 1em;
+  border:none;
+  width:100%;
+  min-height: 40px;
+}
+//fin base código//
+
+.button--codigo {
+  background-color:$color-gris-1 !important;
+
+}
+
+.icono--codigo {
+  .icono--1{
+      padding-top:0.5em;
+
+  }
+  .icono--2{
+      padding-top:0.5em;
+      padding-left:0.5em;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .contenedor--mdCardNav{
+    height: auto;
+  }
+}
+@media (max-width:767px){
+  .contenedor--mdCardNav {
+    height: auto;
+    }
+}
+
+.card--nav_webkit{
+.colapsable--lateral {
+    overflow: hidden;
+    // width: 100%;
+
+    border-bottom: 1px solid #E9EBEF;
+    .icono--menu1 {
+        display: block;
+        float: right;
+        width: auto;
+        height: 55px;
+        margin: 5px 10px 0 0;
+        padding: 0;
+    }
+    .icono--menu2 {
+        display: none;
+        float: right;
+        width: auto;
+        height: 55px;
+        margin: 5px 10px 0 0;
+        padding: 0;
+    }
+    li {
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    md-button {
+      margin: 0px;
+      padding: 0px;
+      border-radius: 0px;
+      &:hover {
+          background: #F0F2F5 !important;
+      }
+
+    }
+    a {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      height: 50px;
+      line-height: 50px;
+      text-decoration: none;
+      text-transform: none;
+      font-size: 14px;
+      border: none;
+      &:focus {
+          outline: none;
+      }
+      &:hover {
+          background: #F0F2F5;
+      }
+      p {
+        float: left;
+        padding: 0px 0px 0px 50px;
+        line-height: 50px;
+        font-style: none;
+        color: #486C7C;
+        font-size: 1.1em;
+      }
+    }
+    button {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      background: #fff;
+      border: none;
+      &:focus {
+          outline: none;
+      }
+      &:hover {
+          background: #F0F2F5;
+      }
+      p {
+        float: left;
+        padding: 0px 0px 0px 35px;
+        line-height: 50px;
+        color: #486C7C;
+        font-size: 1.1em;
+      }
+    }
+    p {
+        padding: 0 0 0 10px;
+        line-height: 60px;
+    }
+    ul {
+        list-style-type: none;
+    }
+}
+}
+
+//nuevas clases textos
+
+h1.titulo--principal{
+    display: block;
+    font-family: 'Lato';
+    vertical-align: top;
+    padding: 0.8em 0 0.3em 0;
+    border-bottom: 1px solid #CCD1D9;
+    @include font-36;
+    @include lato-light;
+}
+
+h2.titulo--secundario{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+.titulo--detalle {
+        font-family: 'Lato';
+  padding-top:1em;
+  line-height: 1.5em;
+  color: #5BABBF;
+  @include font-12;
+}
+
+  .contenido--detalle{
+          font-family: 'Lato';
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  @include font-16;
+}
+
+
+
+  .parrafo--detalle{
+          font-family: 'Lato';
+  text-align: justify;
+  margin-top: 1em;
+  line-height: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  @include font-14;
+}
+
+
+  .titulo--botonSemantico{
+          font-family: 'Lato';
+  color: #5BABBF;
+  line-height: 1.5em;
+  padding: 0.5em 0em 1em 0em;
+  @include font-14;
+}
+
+.titulo--montoDestacado{
+        font-family: 'Lato';
+  display: inline-block;
+  color:$color-gris-4;
+  vertical-align: middle;
+  padding-right: 0.8em;
+  @include font-20;
+
+}
+.cantidad--montoDestacado{
+        font-family: 'Lato';
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.8em;
+    line-height: 1em;
+    @include font-22;
+    color:$color-verde-1;
+}
+.parrafo--alerta {
+        font-family: 'Lato';
+        @include font-14;
+        line-height: 1.5em;
+}
+
+h2.titulo--anuncios{
+        font-family: 'Lato';
+  border-bottom: 1px solid $color-gris-2;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+
+.separador {
+padding:2em 0em 2em 0em;
+
+
+.titulo--variacionEstrategia{
+  font-family: 'Lato';
+      line-height: 1.5em;
+  // padding: 0em 0em 0.3em;
+  text-align: left;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color:$color-gris-4;
+  @include font-14;
+}
+.tipo--variacionEstrategia{
+  font-family: 'Lato';
+  line-height: 1.5em;
+  text-align: left;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+.titulo--graficoBarra {
+  font-family: 'Lato';
+  margin-bottom: 1em;
+  padding: 1em 0em 0.3em;
+  text-align: left;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color:$color-gris-4;
+  @include font-14;
+  @include lato-bold-600;
+}
+
+.porcentaje--graficoBarra{
+  color:$color-verde-1;
+  vertical-align: baseline;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+  text-align: left;
+  @include font-14;
+}
+.monto--graficoBarra{
+  vertical-align: baseline;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+  text-align: left;
+  @include font-14;
+}
+
+.parrafo--terminosCondiciones {
+        font-family: 'Lato';
+        color: $color-gris-3;
+        line-height: 1.5em;
+        padding-top:1em;
+        text-align: justify;
+        @include font-12;
+}
+
+.titulo--terminosCondiciones{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+.titulo--recomendacion{
+  display:inline-block;
+        font-family: 'Lato';
+        padding-right: 0.7em;
+@include font-12;
+}
+
+.texto--recomendacion {
+    display:inline-block;
+        font-family: 'Lato';
+        color: $color-gris-3;
+        font-style: italic;
+        line-height: 1.5em;
+        text-align: justify;
+        @include font-12;
+}
+
+.titulo--recomendacionDestacada{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-18;
+}
+
+.parrafo--recomendacionDestacada{
+        font-family: 'Lato';
+text-align: justify;
+line-height: 1.5em;
+padding: 1em 0em 1em 0em;
+@include font-14;
+}
+
+.parrafo--recomendacionPrincipal{
+        font-family: 'Lato';
+text-align: justify;
+line-height: 1em;
+padding: 1em 0em 1em 0em;
+@include font-14;
+@include lato-bold-600;
+}
+
+.item--infografia{
+font-family: 'Lato';
+vertical-align:super;
+line-height: 2.5em;
+padding: 0.5em 0em 0.5em 0em;
+@include font-14;
+@include lato-bold-600;
+}
+
+.titulo--cajaDescargable{
+        font-family: 'Lato';
+        color:$color-verde-1;
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+
+  @include font-18;
+  @include lato-bold-600;
+}
+
+.fecha--cajaDescargable{
+        vertical-align: middle;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+
+  text-align: left;
+  line-height: 0.8em;
+  @include font-12;
+}
+.periodo--cajaDescargable{
+        vertical-align: middle;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+
+  text-align: left;
+  line-height: 0.8em;
+  @include font-12;
+}
+.publicacion--cajaDescargable{
+        vertical-align: middle;
+        font-family: 'Lato';
+  padding: 0.5em 0em 0.5em 0em;
+
+  text-align: left;
+  line-height: 0.8em;
+  @include font-14;
+}
+
+.titulo--botonTab{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-16;
+}
+.titulo--botonTabOver{
+        font-family: 'Lato';
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-16;
+  @include lato-bold-600;
+}
+.nombre--graficoCircular{
+font-family: 'Lato';
+vertical-align: middle;
+line-height: 1.3em;
+padding: 0.5em 0em 0.5em 0em;
+@include font-18;
+}
+.numeros--graficoCircular{
+font-family: 'Lato';
+vertical-align: middle;
+line-height: 1.3em;
+padding: 0.5em 0em 0.5em 0em;
+@include font-20;
+@include lato-bold-600;
+}
+.porcentaje--graficoCircular{
+font-family: 'Lato';
+color:$color-verde-1;
+vertical-align: middle;
+line-height: 1.3em;
+padding: 0.5em 0em 0.5em 0em;
+@include font-20;
+}
+
+h2.titulo--secundarioSubrayado{
+        font-family: 'Lato';
+  border-bottom: 1px solid $color-gris-2;
+  margin-bottom: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0 auto;
+  color:$color-gris-4;
+  @include font-20;
+}
+
+.titulo--operacion{
+            color:$color-gris-4;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    line-height: 1.3em;
+    @include font-14;
+
+}
+    .numero--operacion{
+            font-family: 'Lato';
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    @include font-16;
+    @include lato-bold-600;
+  }
+
+.label--paginador{
+  font-family: 'Lato';
+  color:$color-gris-4;
+  padding: 0.5em 0em 1em 0em;
+  @include font-14;
+  }
+
+.label--dropdownList{
+  font-family: 'Lato';
+  color: #5BABBF;
+  padding: 0.5em 0em 1em 0em;
+  @include font-14;
+  }
+    .titulo--dropdownList{
+    color:$color-gris-4;
+    font-family: 'Lato';
+    vertical-align: middle;
+    line-height: 1.3em;
+  padding: 0.5em 0em 1em 0em;
+    @include font-16;
+    @include lato-bold-600;
+}
+
+    .item--dropdownList{
+      color:$color-gris-4;
+      font-family: 'Lato';
+            vertical-align: middle;
+                  line-height: 1.3em;
+  padding: 0.5em 0em 1em 0em;
+      @include font-14;
+      }
+    .itemOver--dropdownList{
+            vertical-align: middle;
+      color:$color-azul-1;
+            line-height: 1.3em;
+      font-family: 'Lato';
+      padding: 0.5em 0em 1em 0em;
+      @include font-14;
+      }
+
+
+    .titulo--tabla{
+    font-family: 'Lato';
+    vertical-align: middle;
+    line-height: 1.8em;
+    padding: 0.5em 0em 0.5em 0em;
+    @include font-16;
+}
+    .encabezado--tabla{
+    font-family: 'Lato';
+    vertical-align: middle;
+    line-height: 1.8em;
+    padding: 0.5em 0em 0.5em 0em;
+    @include font-14;
+    @include lato-bold-600;
+}
+    .porcentaje--tabla{
+              color:$color-verde-1;
+    font-family: 'Lato';
+    vertical-align: middle;
+    line-height: 1.8em;
+    padding: 0.5em 0em 0.5em 0em;
+    @include font-14;
+    @include lato-bold-600;
+}
+  .detalle--tabla{
+          vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    text-align: left;
+    line-height: 1.8em;
+    @include font-14;
+}
+  .info--tabla{
+          vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+              font-style: italic;
+    text-align: left;
+    line-height: 1.8em;
+    @include font-12;
+}
+
+  .fecha--bitacora{
+            color:$color-gris-4;
+          // vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    line-height: 1.3em;
+    @include font-14;
+}
+  .nombre--bitacora{
+            color:$color-gris-4;
+          // vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    line-height: 1.3em;
+    @include font-14;
+    @include lato-bold-600;
+}
+.detalle--bitacora{
+            color:$color-gris-4;
+          // vertical-align: middle;
+          font-family: 'Lato';
+    padding: 0.5em 0em 0.5em 0em;
+    line-height: 1.3em;
+    @include font-14;
+
+}
+
+
+  .subtitulo--resumen{
+          font-family: 'Lato';
+    text-align: left;
+    line-height: 1.8em;
+    @include font-14;
+    @include lato-bold-600;
+}
+  .detalle-resumen{
+          font-family: 'Lato';
+    color: $color-gris-3;
+    text-align: left;
+    line-height: 1.8em;
+    @include font-14;
+}
+
+.contenido--parrafo{
+        font-family: 'Lato';
+text-align: justify;
+line-height: 1.5em;
+padding: 1em 0em 1em 0em;
+@include font-14;
+}
+
+.info--titulo{
+        font-family: 'Lato';
+padding: 0.5em 0em 1em 0em;
+@include font-14;
+}
+
+.parrafo--info {
+        font-family: 'Lato';
+        color: $color-gris-3;
+        font-style: italic;
+        line-height: 1.5em;
+        text-align: justify;
+        @include font-12;
+}
+
+.parrafo--recomendacion {
+
+}
+
+          .titulo--resumenAccion {
+            line-height: 1.875em;
+            @include lato-bold-600;
+          }
+          .titulo--resumenProducto {
+            line-height: 1.875em;
+            color: $color-gris-3;
+            @include font-14;
+          }
+          .titulo--resumenFecha {
+            line-height: 1.875em;
+            color: $color-gris-3;
+            @include font-14;
+          }
+}
+
+          h3.contenidoWidgetAsesorias--tituloRiesgo {
+              float: left;
+              color: #536374;
+              font-size: 18px;
+              font-weight: 600;
+              padding-top: 5px;
+          }
+          h4.contenidoWidgetAsesorias--tituloConsejo {
+              color: #69B4C5;
+              font-size: 16px;
+              font-weight: 600;
+              padding-top: 7px;
+          }
+          p.contenidoWidgetAsesorias--consejo {
+              font-size: 13px;
+              font-weight: 500;
+              text-align: justify;
+              letter-spacing: 0.01px;
+          }
+
+      .contenedorScrollme--desktop {
+          margin-top: 10px;
+          .patrimonioWidgetBar {
+              display: inline-table;
+              width: 100%;
+              margin-bottom: 1em;
+              .tituloProgresBar {
+                  @include lato-bold-600;
+                  margin-bottom: 9px;
+              }
+              .porcentajeProgresBar {
+                  color: #5BABBF;
+              }
+              .patrimonioWidgetBar--contenedorDatos-personas {
+                  // width: 63%;
+              }
+          }
+      }
+
+
+      //COMPONENTES//
+
+      //**Inicio Bars**//
+
+  .resumen--bloque {
+    &.quitar_borde{
+          height: auto !important;
+          box-shadow: none !important;
+      }
+
+    .resumen--bloque__contenido {
+      color: $color-gris-4;
+      position: relative;
+      .contenidoWidgetAsesorias {
+          .contenidoWidgetAsesorias--grafico {
+              margin-top: 25px;
+              margin-left: -5px;
+          }
+      }
+    }
+  }
+
+
+      //**Fin Bars**//

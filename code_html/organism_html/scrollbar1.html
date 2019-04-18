@@ -1,0 +1,44 @@
+<textarea name="name" rows="8" cols="80">
+
+<section>
+    <div class="resumenInversiones wow fadeInDown" data-wow-delay="0.5s">
+        <div class="ban-row">
+            <div class="ban-col-sm-12  ban-col-md-6 ban-col-md-push-3">
+                <div class="resumen--bloque">
+                    <div class="resumen--bloque__contenido">
+                        <div ng-controller="contenedorScrollme">
+                            <div class="contenedorScrollme--desktop" ng-scrollbar ng-if="!isMobile" rebuild-on="rebuild:me" rebuild-on-resize>
+                                <div class="patrimonioWidgetBar" ng-repeat="prod in productoScroll" ng-class="{'ultimo-hijo': $last}">
+                                    <div class="patrimonioWidgetBar--contenedorDatos-personas">
+                                        <h3 class="tituloProgresBar">{{prod.nombre}}</h3>
+                                        <p class="porcentajeProgresBar">{{prod.porcentaje}}</p>
+                                        <p class="totalProgresBar">{{prod.monto}}</p>
+                                        <div class="contenedorProgresBar">
+                                            <div class="patrimonioWidgetBar--progresBar" ng-controller="progress" style=" width:{{progressval}}%;"></div>
+                                        </div>
+                                    </div>
+                                    <md-button class="md-raised boton2 btn-lg btn-block patrimonioWidgetBar--boton ">
+                                        <span class="patrimonioWidget--boton__texto">INVERTIR</span></md-button>
+                                </div>
+                            </div>
+                            <div class="contenedorScrollme--mobile" ng-if="isMobile">
+                                <div class="patrimonioWidgetBar" ng-repeat="prod in productoScroll" ng-class="{'ultimo-hijo': $last}">
+                                    <div class="patrimonioWidgetBar--contenedorDatos-personas">
+                                        <h3 class="tituloProgresBar">{{prod.nombre}}</h3>
+                                        <p class="porcentajeProgresBar">{{prod.porcentaje}}</p>
+                                        <p class="totalProgresBar">{{prod.monto}}</p>
+                                        <div class="contenedorProgresBar">
+                                            <div class="patrimonioWidgetBar--progresBar" ng-controller="progress" style=" width:{{progressval}}%;"></div>
+                                        </div>
+                                    </div>
+                                    <md-button class="md-raised boton2 btn-lg btn-block patrimonioWidgetBar--boton "><span class="patrimonioWidget--boton__texto">ABONAR</span></md-button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</textarea>

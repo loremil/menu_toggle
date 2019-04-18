@@ -1,0 +1,202 @@
+<section>
+    <div class="ban-container">
+        <div class="resumenInversiones wow fadeInDown" data-wow-delay="0.5s">
+            <div class="ban-row">
+                <div class="ban-col-sm-12 ban-col-md-4">
+                    <div class="resumen--bloque">
+                        <div class="resumen--bloque__titulo">
+                            <h2 class="subtitulos">Patrimonio</h2>
+                        </div>
+                        <div class="resumen--bloque__contenido">
+                            <div class="ban-row">
+                                <div class="ban-col-xs-12 ban-col-sm-12">
+                                    <div class="graficoWidgetPatrimonio graficoWidgetPatrimonio__personas" ng-controller="graficoWidgetPatrimonio">
+                                        <ks-swiper-container override-parameters="parametrosWidgetPatrimonio" on-ready="onReadySwiper(swiper)">
+                                            <ks-swiper-slide class="graficoWidgetPatrimonio--swiperSlide">
+                                                <div class="graficoWidgetPatrimonio--graficoGeneral" ng-controller="graficoGeneralWidgetPatrimonio">
+                                                    <div id="graficoGeneralWidgetPatrimonio"></div>
+                                                    <div class="graficoWidgetPatrimonio--slideProducto__textos ban-grafico2">
+                                                        <span class="nombre">Patrimonio Total</span>
+                                                        <span class="monto">$372.898.097</span>
+                                                        <span class="porcentaje">100%</span>
+                                                    </div>
+                                                </div>
+                                            </ks-swiper-slide>
+                                            <ks-swiper-slide ng-repeat="producto in productos" class="graficoWidgetPatrimonio--swiperSlide">
+                                                <div class="graficoWidgetPatrimonio--slideProducto">
+                                                    <hc-chart options="producto.opcionesGrafico"></hc-chart>
+                                                    <div class="graficoWidgetPatrimonio--slideProducto__textos ban-grafico1">
+                                                        <span class="nombre">{{producto.nombre}}</span>
+                                                        <span class="monto">{{producto.monto}}</span>
+                                                        <span class="porcentaje">{{producto.porcentaje}}</span>
+                                                        <span class="fecha">{{producto.fecha}}</span>
+                                                    </div>
+                                                </div>
+                                            </ks-swiper-slide>
+                                        </ks-swiper-container>
+                                    </div>
+                                </div>
+                                <div ng-controller="contenedorScrollme">
+                                    <div class="contenedorScrollme--desktop" ng-scrollbar ng-if="!isMobile" rebuild-on="rebuild:me" rebuild-on-resize>
+                                        <div class="patrimonioWidgetBar" ng-repeat="prod in productoScroll" ng-class="{'ultimo-hijo': $last}">
+                                            <div class="patrimonioWidgetBar--contenedorDatos-personas">
+                                                <h3 class="tituloProgresBar">{{prod.nombre}}</h3>
+                                                <p class="porcentajeProgresBar">{{prod.porcentaje}}</p>
+                                                <p class="totalProgresBar">{{prod.monto}}</p>
+                                                <div class="contenedorProgresBar">
+                                                    <div class="patrimonioWidgetBar--progresBar" ng-controller="progress" style=" width:{{progressval}}%;"></div>
+                                                </div>
+                                            </div>
+                                            <md-button class="md-raised boton2 btn-lg btn-block patrimonioWidgetBar--boton ">
+                                                <span class="patrimonioWidget--boton__texto">INVERTIR</span></md-button>
+                                        </div>
+                                    </div>
+                                    <div class="contenedorScrollme--mobile" ng-if="isMobile">
+                                        <div class="patrimonioWidgetBar" ng-repeat="prod in productoScroll" ng-class="{'ultimo-hijo': $last}">
+                                            <div class="patrimonioWidgetBar--contenedorDatos-personas">
+                                                <h3 class="tituloProgresBar">{{prod.nombre}}</h3>
+                                                <p class="porcentajeProgresBar">{{prod.porcentaje}}</p>
+                                                <p class="totalProgresBar">{{prod.monto}}</p>
+                                                <div class="contenedorProgresBar">
+                                                    <div class="patrimonioWidgetBar--progresBar" ng-controller="progress" style=" width:{{progressval}}%;"></div>
+                                                </div>
+                                            </div>
+                                            <md-button class="md-raised boton2 btn-lg btn-block patrimonioWidgetBar--boton "><span class="patrimonioWidget--boton__texto">ABONAR</span></md-button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <md-button class="md-raised boton2 h--width" href="#patrimonio"><span>VER PATRIMONIOS</span></md-button>
+                    </div>
+                </div>
+                <div class="ban-col-sm-12 ban-col-md-4">
+                    <div class="resumen--bloque">
+                        <div class="resumen--bloque__titulo">
+                            <h2 class="subtitulos">Últimos Movimientos</h2>
+                        </div>
+                        <div class="resumen--bloque__contenido">
+                            <div class="ban-row">
+                                <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                                    <div class="resumen--detalle">
+                                        <h3 class="detalle--titulo">Rescate<span>$100.000</span></h3>
+                                        <p class="detalle--info">Fondo Mutuo<span>Global Mid Cap</span></p>
+                                        <p class="detalle--info">Fecha<span>12/02/2017</span></p>
+                                    </div>
+                                </div>
+                                <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                                    <div class="resumen--detalle">
+                                        <h3 class="detalle--titulo">Aporte<span>$200.000</span></h3>
+                                        <p class="detalle--info">Fondo Mutuo<span>Global Mid Cap</span></p>
+                                        <p class="detalle--info">Fecha<span>12/02/2017</span></p>
+                                    </div>
+                                </div>
+                                <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                                    <div class="resumen--detalle">
+                                        <h3 class="detalle--titulo">Compra<span>$100.000</span></h3>
+                                        <p class="detalle--info">Acciones<span>LAN</span></p>
+                                        <p class="detalle--info">Fecha<span>12/02/2017</span></p>
+                                    </div>
+                                </div>
+                                <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                                    <div class="resumen--detalle">
+                                        <h3 class="detalle--titulo">Venta<span>$260.000</span></h3>
+                                        <p class="detalle--info">Acciones<span>CAP</span></p>
+                                        <p class="detalle--info">Fecha<span>12/02/2017</span></p>
+                                    </div>
+                                </div>
+                                <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                                    <div class="resumen--detalle">
+                                        <h3 class="detalle--titulo">Reinversión<span>$100.000</span></h3>
+                                        <p class="detalle--info">Fondo Mutuo<span>Global Mid Cap</span></p>
+                                        <p class="detalle--info">Fecha<span>12/02/2017</span></p>
+                                    </div>
+                                </div>
+                                <div class="ban-col-xs-12 ban-col-sm-6 ban-col-md-12">
+                                    <div class="resumen--detalle">
+                                        <h3 class="detalle--titulo">Ingreso<span>$100.000</span></h3>
+                                        <p class="detalle--info">Fondo Mutuo<span>Moderada</span></p>
+                                        <p class="detalle--info">Fecha<span>12/02/2017</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <md-button class="md-raised boton2 h--width" href="#movimientos"><span>VER MOVIMIENTOS</span></md-button>
+                    </div>
+                </div>
+                <div class="ban-col-sm-12 ban-col-md-4">
+                    <div class="resumen--bloque">
+                        <div class="resumen--bloque__titulo">
+                            <h2 class="subtitulos">Asesoría</h2>
+                        </div>
+                        <div class="resumen--bloque__contenido">
+                            <div class="ban-row">
+                                <div class="ban-col-xs-12">
+                                    <div class="contenidoWidgetAsesorias" ng-controller="barraGraficoAsesoria">
+                                        <p class="contenidoWidgetAsesorias--informe">Tú exposición actual en renta variable es de <span class="porcentaje--detalle">50%</span></p>
+                                        <img class="contenidoWidgetAsesorias--imgIcon" alt="test" src="assets/images/iconoprudente.png" />
+                                        <div class="contenidoWidgetAsesorias--contenedortitulios">
+                                            <h3 class="contenidoWidgetAsesorias--tituloRiesgo">Prudente</h3><br/>
+                                            <h4 class="contenidoWidgetAsesorias--tituloConsejo">Inviertes hasta un 30% RV</h4>
+                                        </div>
+                                        <div class="contenidoWidgetAsesorias--grafico" id="barraGraficoAsesoria"></div>
+                                        <p class="contenidoWidgetAsesorias--consejo">Tu marco de actuación es Prudente, por lo que te recomendamos invertir hasta un 30% de tu patrimonio en Renta Variable.</p>
+                                        <md-button class="md-raised boton--ver btn-lg btn-block ban-boton-3 boton2"><span>ACTUALIZAR</span></md-button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resumen--bloque__titulo">
+                                <h2 class="subtitulos">Recomendación</h2>
+                                <md-button class="bloque--titulo__vermas" aria-label="Vermas">
+                                    <md-icon><i class="material-icons">&#xE5C8;</i>
+                                        <md-tooltip md-direction="Bottom">Ver más</md-tooltip>
+                                    </md-icon>
+                                </md-button>
+                            </div>
+                            <div class="ban-row">
+                                <div class="ban-col-xs-12">
+                                    <div class="contenidoWidgetRecomendacion" ng-controller="swipeWidgetRecomendacion">
+                                        <div id="swipeWidgetRecomendacion--swiper-container" class="ban-swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="contenedorTextos--estrategia">
+                                                        <h3 class="contenidoWidgetRecomendacion--estrategia">BALANCEADO</h3>
+                                                        <h3 class="contenidoWidgetRecomendacion--estrategiaTipo">ESTRATEGIA CONSERVADORA</h3>
+                                                    </div>
+                                                    <div class="contenedorVariacion--estrategia">
+                                                        <p class="variacionPorcentaje">+0,22%</p>
+                                                        <p class="variacionIndicador">Variación</p>
+                                                    </div>
+                                                    <div class="contenedorValorCuota--estrategia">
+                                                        <p class="variacionPorcentaje">$37.259,7372</p>
+                                                        <p class="variacionIndicador">Valor cuota serie C / CLP</p>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="contenedorTextos--estrategia">
+                                                        <h3 class="contenidoWidgetRecomendacion--estrategia">BALANCEADO</h3>
+                                                        <h3 class="contenidoWidgetRecomendacion--estrategiaTipo">ESTRATEGIA CONSERVADORA</h3>
+                                                    </div>
+                                                    <div class="contenedorVariacion--estrategia">
+                                                        <p class="variacionPorcentaje">+0,22%</p>
+                                                        <p class="variacionIndicador">Variación</p>
+                                                    </div>
+                                                    <div class="contenedorValorCuota--estrategia">
+                                                        <p class="variacionPorcentaje">$37.259,7372</p>
+                                                        <p class="variacionIndicador">Valor cuota serie C / CLP</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="swipeWidgetRecomendacion-pagination" class="ban-swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <md-button class="md-raised boton1 h--width" href="#fondos-mutuos"><span> APORTAR</span></md-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

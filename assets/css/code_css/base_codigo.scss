@@ -1,0 +1,58 @@
+
+.documentos{
+  padding-top: 0em;
+  md-tab-content {
+    padding-top: 1em;
+  }
+  md-tabs-canvas {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    a:focus, a:active {
+      text-decoration: none;
+    }
+    }
+  md-pagination-wrapper {
+    width: 64em !important;
+  }
+  md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+    height: 0.25em; }
+
+  md-tabs.md-default-theme .md-tab, md-tabs .md-tab {
+    text-transform: inherit;
+    color: inherit;
+    padding: 12px 50px 12px 50px;
+    @include font-16;
+    @include lato-normal;
+  }
+  md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon {
+    font-weight: bold; }
+  md-tabs .md-tab .md-ripple-container {
+   color: $color-botones;
+  }
+  md-tabs md-ink-bar {
+    background: $color-active;
+    color: $color-active;
+  }
+
+
+  .instrucciones--acciones{
+    background-color: $color-secundario-blanco;
+    padding: 2em 0em 2em 0em;
+    text-align: right;
+  }
+}
+
+
+.misDatos md-tabs-wrapper {
+    padding: 1.5em;
+    background: #FFF;
+}
+
+@media (max-width:767px){
+  .documentos md-tabs.md-default-theme .md-tab, .documentos md-tabs .md-tab{
+    padding: 12px 1em;
+  }
+  .misDatos md-tabs-wrapper{
+    padding: 0.8em 0em;
+  }
+}
